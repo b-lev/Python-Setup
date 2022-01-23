@@ -175,7 +175,10 @@ Lastly, git will help you break your coding up into management micro-goals. When
 To show you how to commit, we are going to commit the code you pasted above into intro.py.
     - Open Github Desktop
     - Make sure you are in our new repository. It should be listed in the top left of the window.
-    - 
+    - You should see intro.py listed with a check box. Make sure it is checked. It should be the only file checked of anything listed. (mac users might see a pesky .DS_store file listed.)
+    - Github Desktop tries to be helpful here by putting in a comment for us. It won't do that if you check in more than one file.
+    - Notice the green plus -- that's a visual indication that we are adding a file to the list that git will track for us.
+    - Click the blue "Commit to 
 
 # Standardizing your source code
 
