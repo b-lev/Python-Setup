@@ -153,7 +153,7 @@ Now try to run the code. You should get something like this. Each time you run i
  'Rebecca': {'email': 'loretta@mail2composer.com',
              'exam_score': 75,
              'homework_score': 67},
- 'Roanne': {'email': 'caoimhe@computer-freak.com',
+ 'Roanne': {'email': 'caoimhe@copacabana.com',
             'exam_score': 7,
             'homework_score': 58},
  'Mohammad': {'email': 'heaven@mail2cardinal.com',
@@ -161,7 +161,72 @@ Now try to run the code. You should get something like this. Each time you run i
               'homework_score': 10}}
 ```
 
-# Using black to format your code
+# Standardizing your source code
+
+It's hard to sight read code. That is, it's hard to just look at code and read it as easily as you might read a book. It takes experience and talent. But even for reading prose books, we expect the presentation to follow certain conventions. Margins, chapter titles, larger and smaller fonts, the use of bold and italics, and separation of paragraphs with vertical space or indentations are helpful for comprehension, even if they aren't strictly part of engish grammar. 
+
+The same is true for code. When we see code formatted in an expected fashion, it improves comprehension for the reader. And comprehension is really important for yourself (so that you don't miss bugs), for your TA (so that they can help you squash a bug), and for your professional colleagues (so that they build on your code and help you squash bugs).
+
+
+# Using Black to format your code
+
+There are style guides [out there](https://google.github.io/styleguide/pyguide.html) that can help you do that. I used to tell my students that they had to follow one style guide or another during the semester. But they are hard to ingest and incorporate consistently. 
+
+A better way to format your code to ensure it meets a given style is to let a program format it for you. Black is one such formatter that I recommend. Here's it's pypi.org page (you know what to do to install it!): https://pypi.org/project/black/
+
+Once you have it installed, you can run it as 
+
+```
+% black intro.py 
+reformatted intro.py
+All done! ✨ 🍰 ✨
+1 file reformatted.
+
+```
+
+Or you can do it to every file in a directory. (Can you figure out how to hit all files in subdirectories too?)
+
+```
+% black *.py
+```
+
+It's important to note that Black will not reformat your python file if it contains a syntax error. 
+
+Now intro.py should look like this:
+
+```
+from random_words import RandomEmails
+from random_words import RandomNicknames
+import random, sys
+from pprint import pp
+
+
+def main():
+    # create a dictionary of random nicknames
+    roster = dict()
+    random_nicknames = RandomNicknames()
+    random_emails = RandomEmails()
+    students = random_nicknames.random_nicks(count=10)
+    for name in students:
+        roster[name] = {
+            "email": random_emails.randomMail(),
+            "exam_score": random.randint(1, 100),
+            "homework_score": random.randint(1, 100),
+        }
+
+    pp(roster)
+
+
+if __name__ == "__main__":
+    main()
+```
+
+That's much nicer! The lines are not too wide. There is some standard spacing between the imports, functions, and the ```if __name__``` clause at the end. 
+
+There is more we can do.
+
+
+
 
 # Using isort to sort your imports
 
