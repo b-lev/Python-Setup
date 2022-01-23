@@ -115,6 +115,52 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'random_words'
 ```
 
+I've been calling ```random_words``` a "library" and yet Python is complaining about a missing "module". What's the difference? A library is a loose term describing the project and its collection of files and such that perform some function. A module is a specific set of files that contain the code that instantiate or realize the library's goals. And so here Python is complaining that it can't find the files it needs to import ```random_words```. 
+
+Installation is easy. For all libraries on pypi.org, there is a install command you can copy by clicking the little copy icon.  Paste into your terminal.
+
+```
+% pip install RandomWords
+Collecting randomwords
+  Using cached RandomWords-0.3.0-py3-none-any.whl
+Installing collected packages: randomwords
+Successfully installed randomwords-0.3.0
+```
+Note that the install name is different than the module name. Actually the uppercase and lowercase letters don't matter. The removal of the underscore is important. You can't do ```pip install random_words``` successfully. This difference exists for a sizeable number of libraries.
+
+The command above will install the latest version of randomwords. If you want to install a specific version, you can do a double equals and the version number: ```pip install RandomWords==0.3.0```.
+
+Now try to run the code. You should get something like this. Each time you run it, you'll get different output.
+```
+% python3.9 intro.py       
+{'Marisol': {'email': 'irwin@from-europe.com',
+             'exam_score': 65,
+             'homework_score': 25},
+ 'Cherie': {'email': 'elena@arcor.de', 'exam_score': 77, 'homework_score': 46},
+ 'Mat': {'email': 'douglas@brazilmail.com.br',
+         'exam_score': 61,
+         'homework_score': 71},
+ 'Vonda': {'email': 'zoe@tropicalstorm.com',
+           'exam_score': 27,
+           'homework_score': 95},
+ 'Abbie': {'email': 'dominick@mail2biologist.com',
+           'exam_score': 88,
+           'homework_score': 10},
+ 'Edith': {'email': 'carol@mail2victoria.com',
+           'exam_score': 40,
+           'homework_score': 99},
+ 'Amber': {'email': 'sonya@levele.hu', 'exam_score': 7, 'homework_score': 74},
+ 'Rebecca': {'email': 'loretta@mail2composer.com',
+             'exam_score': 75,
+             'homework_score': 67},
+ 'Roanne': {'email': 'caoimhe@computer-freak.com',
+            'exam_score': 7,
+            'homework_score': 58},
+ 'Mohammad': {'email': 'heaven@mail2cardinal.com',
+              'exam_score': 67,
+              'homework_score': 10}}
+```
+
 # Using black to format your code
 
 # Using isort to sort your imports
