@@ -84,11 +84,11 @@ This isn't a tutorial on how to program in python. And so I'm going to just give
     def main():
         #create a dictionary of random nicknames
         roster = dict()
-        random_nicknames = RandomNicknames()
-        random_emails = RandomEmails()
-        students = random_nicknames.random_nicks(count=10)
-        for name in students:
-            roster[name] = {"email": random_emails.randomMail(),"exam_score": random.randint(1, 100),"homework_score": random.randint(1, 100)        }
+        random_nicknames=  RandomNicknames()
+        random_emails =RandomEmails()
+        students =   random_nicknames.random_nicks(count=10)
+        for name in students :
+            roster[name] = {"email": random_emails.randomMail(),'exam_score': random.randint(1, 100),"homework_score": random.randint(1, 100)        }
 
         pp(roster)
     if __name__ == "__main__":
@@ -168,7 +168,7 @@ It's hard to sight read code. That is, it's hard to just look at code and read i
 The same is true for code. When we see code formatted in an expected fashion, it improves comprehension for the reader. And comprehension is really important for yourself (so that you don't miss bugs), for your TA (so that they can help you squash a bug), and for your professional colleagues (so that they build on your code and help you squash bugs).
 
 
-# Using Black to format your code
+## Using Black to format your code
 
 There are style guides [out there](https://google.github.io/styleguide/pyguide.html) that can help you do that. I used to tell my students that they had to follow one style guide or another during the semester. But they are hard to ingest and incorporate consistently. 
 
@@ -195,42 +195,103 @@ It's important to note that Black will not reformat your python file if it conta
 Now intro.py should look like this:
 
 ```
-from random_words import RandomEmails
-from random_words import RandomNicknames
-import random, sys
-from pprint import pp
+    from random_words import RandomEmails
+    from random_words import RandomNicknames
+    import random, sys
+    from pprint import pp
 
 
-def main():
-    # create a dictionary of random nicknames
-    roster = dict()
-    random_nicknames = RandomNicknames()
-    random_emails = RandomEmails()
-    students = random_nicknames.random_nicks(count=10)
-    for name in students:
-        roster[name] = {
-            "email": random_emails.randomMail(),
-            "exam_score": random.randint(1, 100),
-            "homework_score": random.randint(1, 100),
-        }
+    def main():
+        # create a dictionary of random nicknames
+        roster = dict()
+        random_nicknames = RandomNicknames()
+        random_emails = RandomEmails()
+        students = random_nicknames.random_nicks(count=10)
+        for name in students:
+            roster[name] = {
+                "email": random_emails.randomMail(),
+                "exam_score": random.randint(1, 100),
+                "homework_score": random.randint(1, 100),
+            }
 
-    pp(roster)
+        pp(roster)
 
 
-if __name__ == "__main__":
-    main()
+    if __name__ == "__main__":
+        main()
 ```
 
-That's much nicer! The lines are not too wide. There is some standard spacing between the imports, functions, and the ```if __name__``` clause at the end. 
+That's much nicer! The lines are not too wide. There is some standard spacing between the imports, functions, and the ```if __name__``` clause at the end. It changed the single quotes around exam_score to use double quotes so that it's consistent with the other lines. It even put a space between ```#``` and the comment. Again, before we had a legit Python program that ran correctly. But now we have source that is equivalent and easier to read.
+
+Black is so useful that I promise you that once you start using it consistently, you'll realize how crazy life was before. You will get annoyed at code that hasn't been sent through Black.
 
 There is more we can do.
 
+## Using isort to sort your imports
+
+Black doesn't do it all. Look at those import statements. Do you see the problem? Probably not. Let's run our program source code through [isort](https://pypi.org/project/isort/). Please install it with pip, and then do the following.
+
+```
+% isort --profile black intro.py
+Fixing /Users/brian/github/tutorial-example/intro.py
+```
+(Notice that I included an argument for ```-profile black``` so that isort is compatible with black.)
+
+Just like black, isort changes the source code only if there isn't a syntax error and it makes changes only if it doesn't change the how the program runs. All isort does is sort and group together imports: imports from Python's standard library are first, then a new line, and then a group of libraries that have been installed with pip (or were locally created). Now our source code looks like so:
+
+```
+    import random
+    import sys
+    from pprint import pp
+
+    from random_words import RandomEmails, RandomNicknames
 
 
+    def main():
+        # create a dictionary of random nicknames
+        roster = dict()
+        random_nicknames = RandomNicknames()
+        random_emails = RandomEmails()
+        students = random_nicknames.random_nicks(count=10)
+        for name in students:
+            roster[name] = {
+                "email": random_emails.randomMail(),
+                "exam_score": random.randint(1, 100),
+                "homework_score": random.randint(1, 100),
+            }
 
-# Using isort to sort your imports
+        pp(roster)
 
-# Using flake to lint your code
+
+    if __name__ == "__main__":
+        main()
+```
+You'll notice that isort also separated each import into its own line (before random and sys) were together. And it combined all the imports from random_words into one statement. That's clearer.
+
+## Using flake8 to lint your code
+
+A linter is a program that examines your source code for bad style or errors, and it checks for things in a wide range of categories. The first linter was called [lint](https://en.wikipedia.org/wiki/Lint_(software)) and was written in 1978! 
+
+[Flake8](https://pypi.org/project/flake8/) (pronounced "flay-kate") is one such linter. It's pretty aggressive and exacting. And I think especially for a beginning, you'll waste a lot of time trying to get rid of all the flake8 warnings. So for now, let's just focus on errors. 
+
+Because there have been some changes to flake8 over the years, in this case to follow along, please make sure you are version 4 of flake8 using the following command
+
+```% pip install flake8==4.0.1
+```
+
+After you pip install it, run it with these arguments to show only the errors:
+
+```% flake8 --ignore=E intro.py
+intro.py:2:1: F401 'sys' imported but unused
+```
+
+Ah ha! Did you notice that we imported ```sys``` but it wasn't used in our code. That's ugly. Flake8 won't fix that problem, you need to go into vscode to fix it.  If you do that and save the file, you'll note that when you run flake8 again, it won't complain. It doesn't congratulate you for having no errors. 
+
+# Running black, isort, and flake8 in VSCode
+
+This is a great set of tools. And you have the option of running them when you are done, intermittently, or as much as possible. It turns out that the best option is to run them as much as possible. But no one wants to save a file and then switch to the terminal, run the three commands, and then switch back to the editor. That's terribly inefficient. 
+
+What we are going to do instead of configure vscode to run the three tools each time we save our source code. 
 
 # Advanced Topics
 
