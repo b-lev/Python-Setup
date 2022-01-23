@@ -161,6 +161,15 @@ Now try to run the code. You should get something like this. Each time you run i
               'homework_score': 10}}
 ```
 
+# Add your code to git and pushing it to the cloud
+Git is great because it will help you keep track of revisions to your code. The sequence of revisions is less important when you are coding by yourself; it's pretty vital when you are coding with even one other person. 
+
+This is a good time for me to pause to  tell you that one of the most false or synthetic or non-representative parts of learning to code in any course or class is the process for completing an assignment. The instructor hands out an assignment; you spend a relatively short time doing it alone (really just a week or two); you get it to run correctly once; you submit; you never run the code again, you never use the code again.
+
+In real life, projects last months or years. The goals of the project changes over time. The people involve change. You run it again and again and again. And you try to reuse code in other projects. There is another old joke that for any real project there are always at least two people: yourself, and yourself three months from now. You have to structure your code so that you can put it down and make sense of it later as if you are a totally different person. 
+
+Git and tools like it help you in that goal. In the very least, they are a solution to the problem that often comes up for new programmers: "This code worked yesterday but I made some change, and I don't know what, that broke it... and now I'm lost."
+
 # Standardizing your source code
 
 It's hard to sight read code. That is, it's hard to just look at code and read it as easily as you might read a book. It takes experience and talent. But even for reading prose books, we expect the presentation to follow certain conventions. Margins, chapter titles, larger and smaller fonts, the use of bold and italics, and separation of paragraphs with vertical space or indentations are helpful for comprehension, even if they aren't strictly part of engish grammar. 
@@ -225,9 +234,14 @@ That's much nicer! The lines are not too wide. There is some standard spacing be
 
 Black is so useful that I promise you that once you start using it consistently, you'll realize how crazy life was before. You will get annoyed at code that hasn't been sent through Black.
 
-There is more we can do.
+There is more we can do to clean up our code, but let's pause for a minute and talk about git/github again. 
 
-## Using isort to sort your imports
+
+# Check in changes to github
+
+Github desktop has a nice display of the differences you've made to your code. 
+
+# Using isort to sort your imports
 
 Black doesn't do it all. Look at those import statements. Do you see the problem? Probably not. Let's run our program source code through [isort](https://pypi.org/project/isort/). Please install it with pip, and then do the following.
 
@@ -295,8 +309,16 @@ What we are going to do instead of configure vscode to run the three tools each 
 
 # Advanced Topics
 
+## Debugging with pdb
+
+TBW
+
 ## Managing two projects with different requirements 
 
 Your program will be written based on a specific version of Python. It may use features in, say, version 3.9 that are removed in version 3.10. Similarly, you might use a third-party library that might be upgraded in the future. Another problem is that you may be required to use Python 3.9 in one course and Python 3.6 in another course. In this section, we'll learn to set up separate "environments" for each project that ensure functionality is preserved and isolated. 
 
 ## Other linters
+
+- pylint
+- pydocstyle
+
