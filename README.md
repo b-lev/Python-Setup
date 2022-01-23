@@ -162,13 +162,20 @@ Now try to run the code. You should get something like this. Each time you run i
 ```
 
 # Add your code to git and pushing it to the cloud
-Git is great because it will help you keep track of revisions to your code. The sequence of revisions is less important when you are coding by yourself; it's pretty vital when you are coding with even one other person. 
+Git is great because it will help you keep track of revisions to your code. Tracking sequence of revisions is pretty vital when you are coding with even one other person. It's also important when you are coding alone!
 
-This is a good time for me to pause to  tell you that one of the most false or synthetic or non-representative parts of learning to code in any course or class is the process for completing an assignment. The instructor hands out an assignment; you spend a relatively short time doing it alone (really just a week or two); you get it to run correctly once; you submit; you never run the code again, you never use the code again.
+One of the most false or synthetic or non-representative parts of learning to code in any course or class is the typical process for completing an assignment. The instructor hands out an assignment; you spend a relatively short time doing it alone (really just a week or two); you get it to run correctly once; you submit; you never run the code again and you never use the code again.
 
-In real life, projects last months or years. The goals of the project changes over time. The people involve change. You run it again and again and again. And you try to reuse code in other projects. There is another old joke that for any real project there are always at least two people: yourself, and yourself three months from now. You have to structure your code so that you can put it down and make sense of it later as if you are a totally different person. 
+In real life, projects last months or years. The goals of the project changes over time. The people involved change. You run it again and again and again. And you try to reuse the code in other projects. And there is old joke that for any real project there are always at least two people: yourself, and yourself three months from now. You have to learn to write and structure your code so that you can put it down and make sense of it three months later, as if you are a totally different person. 
 
-Git and tools like it help you in that goal. In the very least, they are a solution to the problem that often comes up for new programmers: "This code worked yesterday but I made some change, and I don't know what, that broke it... and now I'm lost."
+Git and tools like it help you in that goal. If the above story isn't convincing, then in the very least, they are a solution to a problem that often comes up for new programmers: "This code worked yesterday but I made some change, and I don't know what ... those changes broke it... and now I'm totally lost."
+
+Lastly, git will help you break your coding up into management micro-goals. When you code, consider the micro-goal you want to achieve. Maybe your goal is to write a method that saves some data to a file. Once the function seems to be working correctly, then tell git about your progress as a *commit* to the repository. To be clear, commit the source code is very different than saving it to your local file system.
+
+To show you how to commit, we are going to commit the code you pasted above into intro.py.
+    - Open Github Desktop
+    - Make sure you are in our new repository. It should be listed in the top left of the window.
+    - 
 
 # Standardizing your source code
 
