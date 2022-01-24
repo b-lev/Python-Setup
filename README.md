@@ -204,7 +204,7 @@ One of the most false or synthetic or non-representative parts of learning to co
 
 In real life, projects last months or years. The goals of the project changes over time. The people involved change. You run it again and again and again. And you try to reuse the code in other projects. And there is old joke that for any real project there are always at least two people: yourself, and yourself three months from now. You have to learn to write and structure your code so that you can put it down and make sense of it three months later, as if you are a totally different person. 
 
-Git and tools like it help you in that goal. If the above story isn't convincing, then in the very least, they are a solution to a problem that often comes up for new programmers: "This code worked yesterday but I made some change, and I don't know what ... those changes broke it... and now I'm totally lost."
+Git and tools like it help you in that goal. If the above story isn't convincing, then in the very least, they are a solution to a problem that often comes up for new programmers: "This code worked a few minutes but I made some change, and I don't know what ... those changes broke it... I'm totally lost and I don't know how to get back to the working version."
 
 Lastly, git will help you break your coding up into management micro-goals. When you code, consider the micro-goal you want to achieve. Maybe your goal is to write a method that saves some data to a file. Once the function seems to be working correctly, then tell git about your progress as a *commit* to the repository. To be clear, commit the source code is very different than saving it to your local file system.
 
