@@ -200,7 +200,7 @@ Now try to run the code. You should get something like this. Each time you run i
 # Add your code to git and pushing it to the cloud
 Git is great because it will help you keep track of revisions to your code. Tracking sequence of revisions is pretty vital when you are coding with even one other person. It's also important when you are coding alone!
 
-One of the most false or synthetic or non-representative parts of learning to code in any course or class is the typical process for completing an assignment. The instructor hands out an assignment; you spend a relatively short time doing it alone (really just a week or two); you get it to run correctly once; you submit; you never run the code again and you never use the code again.
+One of the most false or synthetic or non-representative parts of learning to code in any course is the typical process for completing an assignment. The instructor hands out an assignment; you spend a relatively short time doing it alone (really just a week or two); you get it to run correctly once; you submit; you never run the code again and you never use the code again.
 
 In real life, projects last months or years. The goals of the project changes over time. The people involved change. You run it again and again and again. And you try to reuse the code in other projects. And there is old joke that for any real project there are always at least two people: yourself, and yourself three months from now. You have to learn to write and structure your code so that you can put it down and make sense of it three months later, as if you are a totally different person. 
 
