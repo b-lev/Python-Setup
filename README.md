@@ -22,7 +22,9 @@ All tools are free. (And I have no relationship with the third parties who have 
 ## Learning python
 
 There are many resources for learning python for the first time or for sharpening your skills.
-
+- https://docs.python.org/3.9/tutorial/index.html
+- https://diveintopython3.net/index.html
+- https://learnxinyminutes.com/docs/python/
 - https://pythontutor.com
 - https://swcarpentry.github.io/python-novice-inflammation/
 
