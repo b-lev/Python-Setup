@@ -426,8 +426,45 @@ Now go back to your python file and adjust the formatting. You should see it cha
 ## Adding isort to vscode 
 There are a few tutorials for doing this online, but I don't know that they are helpful for beginners. I'm not sure the following is easy. Proceed at your own risk. 
 
-VSCode keeps its settings in a file called "settings.json". JSON is a human-readable format for storing structured values that is written by computers; or maybe it's a computer-readable format for storing structured values that is written by humans. We are going to modify the json file directly. 
+VSCode keeps its settings in a file called "settings.json". JSON is a human-readable format for storing structured values that is written by computers; or maybe it's a computer-readable format for storing structured values that is written by humans. We are going to modify the json file directly. And you are going to have to do this carefuly as what you see on your screen won't be exactly what I show in these screen shots. 
 
+First, you need to open up the command pallette. Go again to the bottom left and click on the  gear icon. From there, select "Command Palette". You should see something like this. Select "Preferences: Open Settings (JSON)", and if you don't see that listed, start typing those words until you do.
+<p align="center"><img src="images/command-pal.jpg?raw=true" width="75%"></p>
+
+This is going to open a file that is probably not empty. You'll notice words and settings that are related to what we see above. 
+
+Here's the hard part. You need to adjust this file but not violate the JSON rules. In essence, keep commas between items and all brackets need to closed eventually.  Here the steps you need to take.
+
+1. Figure out the *full path* to the isort executable on your computer. (It's called isort.exe on windows.) You can use a file search command to do that. If you are on MacOs or Linux and you've installed isort, you might get away with ```which isort```. To confirm you have the right path, enter it in full on the command line, and it should work. 
+
+2. Make a copy of what is now in your settings.json file. Put the copy in  notepad or in file on your desktop or something. 
+3. Add these lines into the middle of your settings.json file. 
+```
+    "python.sortImports.path": "c:\\Users\\brian\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\isort.exe",
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },    
+
+```
+
+For example, here's how they look merged for me. Note that here my python executable is just "py". Yours may be different. And my copy of isort.exe is in a really deep path. Not unexpected, but deep.
+```
+{
+    "python.formatting.provider": "black",
+    "python.defaultInterpreterPath": "py",
+    "python.linting.flake8Enabled": true,
+    "python.sortImports.path": "c:\\Users\\brian\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\isort.exe",
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },    
+}
+```
+4. Test that it works by messing up your import order, and then save the file. 
+5. If you can't get it to work, then copy back the original settings. 
 
 
 # Other Topics you should look into 
