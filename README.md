@@ -124,11 +124,11 @@ To get the code into your editor, follow these steps.
     if __name__ == "__main__":
         main()
     ```
-Before you get this code to run, you'll need to install the randomwords library It doesn't come with python. 
+Before you get this code to run, you'll need to install the randomwords library. It doesn't come with python. 
 
 # Installing third-party library with pip
 
-Python ships with a large set of [standard libraries](https://docs.python.org/3.9/library/index.html). There a ton of high-quality third-party libraries available as well. (The source code for many such third partis is available on github, it turns out.) In the code above, you can see that I've used the random_words library. 
+Python ships with a large set of [standard libraries](https://docs.python.org/3.9/library/index.html). There a ton of high-quality third-party libraries available as well. (The source code for many  third party libraries is often stored  on github, it turns out.) In the code above, you can see that I've used the random_words library. 
 
 For any good third party library, there are typical two important websites: it's pypi.org page containing documentation and it's homepage. (It turns out that most of the time, the homepage for a library is typically github.) For random_words, they are:
     - documentation: https://pypi.org/project/RandomWords/
