@@ -141,7 +141,7 @@ ModuleNotFoundError: No module named 'random_words'
 
 Python ships with a large set of [standard libraries](https://docs.python.org/3.9/library/index.html). There a ton of high-quality third-party libraries available as well. (The source code for many  third party libraries is often stored  on github, it turns out.) In the code above, you can see that I've used the random_words library, but it's not installed on your computer yet. 
 
-For any good third party library, there are typical two important websites: it's pypi.org page containing documentation and it's homepage. (It turns out that most of the time, the homepage for a library is typically github.) For random_words, they are:
+For any good third party library, there are typical two important websites: its pypi.org page containing documentation and its homepage. (It turns out that most of the time, the homepage for a library is typically github.) For random_words, they are:
 
 - documentation: https://pypi.org/project/RandomWords/
 - homepage: https://github.com/tomislater/RandomWords
@@ -149,10 +149,14 @@ For any good third party library, there are typical two important websites: it's
 
 I've been calling ```random_words``` a "library" and yet Python is complaining about a missing "module". What's the difference? A library is a loose term describing the project and its collection of files and such that perform some function. A module is a specific set of files that contain the code that instantiate or realize the library's goals. And so here Python is complaining that it can't find the files it needs to import ```random_words```. 
 
-Installation is easy. For all libraries on pypi.org, there is a install command you can copy by clicking the little copy icon.  Paste into your terminal.
+Installation is easy. For all libraries on pypi.org, there is a install command you can copy by clicking the little copy icon. 
+
+ <p align="center"><img src="images/rw.jpg?raw=true" width="50%"></p>
+
+Paste or type the following into your terminal. ```pip``` is a command that is installed with python. On some computers, you might have many versions of python installed. Just calling pip might install a library for a version of python that you aren't using. So to be safe, you can try using ```pip3.9 install ...```. If that's not installed (often the case on windows) then go ahead and use ```pip install ...```  
 
 ```
-% pip install RandomWords
+% pip3.9 install RandomWords
 Collecting randomwords
   Using cached RandomWords-0.3.0-py3-none-any.whl
 Installing collected packages: randomwords
