@@ -412,7 +412,7 @@ In the search bar that comes up, type "python" and then you should see "Python" 
 <p align="center"><img src="images/python-search.jpg?raw=true" width="75%"></p>
 
 Scroll down until you see "Python Formatting Provider" and select "black" from the drop down menu.
-<p align="center"><img src="images/python-black.jpg?raw=true" width="75%"></p>
+<p align="center"><img src="images/vsc-black.jpg?raw=true" width="75%"></p>
 
 If you after you make this choice, vscode asks you install black, then certainly let it do that. 
 
