@@ -71,7 +71,7 @@ Now that you did it, do the following per project.
 
 Success! You should be to see your new repository on Github. 
 
-![Image](images/add-intro-py-2.jpg?raw=true \| width=30px)
+![Image](images/add-intro-py-2.jpg?raw=true | width=30px)
 
 # Starting the editor
 
