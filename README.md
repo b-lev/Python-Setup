@@ -47,9 +47,10 @@ There is no excuse for losing your files for a project or assignment. Nope, it's
 
 Git will be our software of choice for source control. Many tools for source control exist and git is just one of them. Now in reality, we aren't going to using git only --- we are going to use GitHub, which is Git coupled with cloud storage. (It's worth noting that the Github people didn't create git, but that's a story for another day.) The nice thing about Github is that if your home/computer/disk/files are destroyed, you can retrieve them from the cloud at any time. If the Github cloud storage facility is destroyed, well then you still have them on your computer don't you.
 
-Here the steps you should go through for at least each course you are if, if not distinctly for every assignment you complete. 
+Here the steps you should go through for at least each course you are in, if not separately for every assignment you start. 
 
-Before you get stared, make sure you do the following steps, each once ever:
+Before you get started, make sure you do the following steps, each once ever:
+
     - Create a subdirectory for using git from home directory, or your documents directory, or something similar. Call it "github". You need only do this once ever. 
     - Link Github Desktop to your GitHub account. To do that, go to "Preferences" and then select "Accounts" and then sign in your Github account. 
 
