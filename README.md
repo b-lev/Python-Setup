@@ -227,7 +227,7 @@ That's it! You pushed your first commit!
 
 # Standardizing your source code
 
-It's hard to sight read code. That is, it's hard to just look at code and read it as easily as you might read a book. It takes experience and talent. But even for reading prose books, for which we are all experts by now, we expect the presentation to follow certain conventions. Margins, chapter titles, larger and smaller fonts, the use of bold and italics, and [separation of paragraphs](images/ducks.jpg) with vertical space or indentations are helpful for comprehension, even if they aren't strictly part of english grammar. 
+It's hard to sight read code. That is, it's hard to just look at code and read it as easily as you might read a book. It takes experience and talent. But even for reading prose books, for which we are all experts by now, we expect the presentation to follow certain conventions: reasonably wide margins, chapters numbered with titles and larger fonts, the use of bold and italics for emphasis, and [separation of paragraphs](images/ducks.jpg) with vertical space or indentations are all helpful for comprehension, even if they aren't strictly part of english grammar. 
 
 The same is true for code. When we see code formatted in an expected fashion, it improves comprehension for the reader. And comprehension is really important for yourself (so that you don't miss bugs), for your TA (so that they can help you squash a bug), and for your professional colleagues (so that they build on your code and help you squash bugs).
 
