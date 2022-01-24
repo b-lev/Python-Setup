@@ -299,7 +299,7 @@ Github Desktop has a nice display of the differences you've made to your code wi
 
 <p align="center"><img src="images/after-black.jpg?raw=true" width="100%"></p>
 
-Your view may look slightly different. Note that I have these settings configured: 
+Your view of these differences (which is often called the "diff" after the command that generates this view) may look slightly different. Note that I have these settings configured for Github Desktop: 
 
 <p align="center"><img src="images/github-split.jpg?raw=true" width="50%"></p>
 
