@@ -8,7 +8,7 @@
 - [Standardizing your source code](#Standardizing-your-source-code)
 - [Using isort to sort your imports](#Using-isort-to-sort-your-imports)
 - [Using flake8 to lint your code](#Using-flake8-to-lint-your-code)
-- [Running black, isort, and flake8 in VSCode](#running-black--isort--and-flake8-in-vscode)
+- [Running black, isort, and flake8 in VSCode](#running-black-isort-and-flake8-in-vscode)
 - [Other Topics](#Other-Topics)
 
 
