@@ -71,10 +71,10 @@ Now you are ready. Do the following per project or assignment that you start.
 1. Publish your repository on github by clicking the "publish repository" button. (If you haven't linked your Github Desktop to your Github account using the preferences->accounts dialog, as I discussed above, this step won't work.)
 
 
-<img src="images/publish.jpg?raw=true" width="50%">
+<p align="center"><img src="images/publish.jpg?raw=true" width="50%"></p>
 
 
-<img src="images/publish-dialog.jpg?raw=true" width="50%">
+<p align="center"><img src="images/publish-dialog.jpg?raw=true" width="50%"></p>
 
 1. Now a dialog window will show up, and you probably don't need to adjust anything. *Important* Make sure the box for "Keep this code private" is checked. If you are creating a repository for a course assignment, you would be violated academic honesty policies by making your code public.
 
@@ -89,7 +89,7 @@ VSCode generally operates the same for all operating systems. (The main differen
 
 Once you've downloaded and installed vscode, you'll see a screen like this:
 
-<img src="images/vscode-first-screen.jpg?raw=true|" width="50%">
+<p align="center"><img src="images/vscode-first-screen.jpg?raw=true|" width="50%"></p>
 
 You might be tempted to use vscode to open up a new file. Don't use vscode to open a file. Instead, use it open a **directory**. Select "Open Folder" from the file menu and open up the directory containing the repository you've created for this tutorial.
 
@@ -207,9 +207,9 @@ To show you how to commit, we are going to commit the code you pasted above into
     - Click the blue "Commit to 
 
 
-<img src="images/add-intro-py.jpg?raw=true" width="50%">
+<p align="center"><img src="images/add-intro-py.jpg?raw=true" width="50%"></p>
 
-<img src="images/push.jpg?raw=true" width="50%">
+<p align="center"><img src="images/push.jpg?raw=true" width="50%"></p>
 
 
 # Standardizing your source code
@@ -279,14 +279,14 @@ Black is so useful that I promise you that once you start using it consistently,
 There is more we can do to clean up our code, but let's pause for a minute and talk about git/github again. 
 
 
-<img src="images/after-black.jpg?raw=true" width="50%">
+<p align="center"><img src="images/after-black.jpg?raw=true" width="50%"></p>
 
 # Check in changes to github
 
 Github desktop has a nice display of the differences you've made to your code. 
 
 
-<img src="images/github-split.jpg?raw=true" width="50%">
+<p align="center"><img src="images/github-split.jpg?raw=true" width="50%"></p>
 
 # Using isort to sort your imports
 
@@ -330,7 +330,7 @@ Just like black, isort changes the source code only if there isn't a syntax erro
 You'll notice that isort also separated each import into its own line (before random and sys) were together. And it combined all the imports from random_words into one statement. That's clearer.
 
 
-<img src="images/after-isort.jpg?raw=true" width="50%">
+<p align="center"><img src="images/after-isort.jpg?raw=true" width="50%"></p>
 
 ## Using flake8 to lint your code
 
@@ -352,10 +352,10 @@ intro.py:2:1: F401 'sys' imported but unused
 Ah ha! Did you notice that we imported ```sys``` but it wasn't used in our code. That's ugly. Flake8 won't fix that problem, you need to go into vscode to fix it.  If you do that and save the file, you'll note that when you run flake8 again, it won't complain. It doesn't congratulate you for having no errors. 
 
 
-<img src="images/after-flake8.jpg?raw=true" width="50%">
+<p align="center"><img src="images/after-flake8.jpg?raw=true" width="50%"></p>
 
 
-<img src="images/commit.jpg?raw=true" width="50%">
+<p align="center"><img src="images/commit.jpg?raw=true" width="50%"></p>
 
 # Running black, isort, and flake8 in VSCode
 
