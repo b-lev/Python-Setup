@@ -8,7 +8,7 @@
 - [Standardizing your source code](#Standardizing-your-source-code)
 - [Using isort to sort your imports](#Using-isort-to-sort-your-imports)
 - [Using flake8 to lint your code](#Using-flake8-to-lint-your-code)
-- [Running black, isort, and flake8 in VSCode](#running-black-isort-and-flake8-in-vscode)
+- [Running black, flake8, and isort in VSCode](#running-black-flake8-and-isort-in-vscode)
 - [Other Topics](#Other-Topics)
 
 
@@ -387,15 +387,15 @@ Did you try switching on the history tab? You should be able to see each commit 
 
 <p align="center"><img src="images/commit.jpg?raw=true" width="50%"></p>
 
-# Running black, isort, and flake8 in VSCode
+# Running black, flake8, and isort in VSCode
 
 This is a great set of tools. And you have the option of running them when you are done with a project, intermittently while you code, or as much as possible. It turns out that the best option is to run them as much as possible. But no one wants to save a file and then switch to the terminal, run the three commands, and then switch back to the editor. That's terribly inefficient. 
 
-Let's instead of configure vscode to run the three tools each time we save our source code. Now, VSCode makes this a little intimidating because there isn't a menu option to do it. So we'll need to take a few steps. 
+Let's instead of configure vscode to run black and flake8 tools each time we save our source code. Below we'll configure vscode to run isort, it's a little more challenging. 
 
+## Black and flake8
 First, if you haven't already, install the "python extension". One way to do that is to visit [this page](https://marketplace.visualstudio.com/items?itemName=ms-python.python) and click the green install button.
 
-There are a few tutorials for doing this online, but I don't know that they are helpful for beginners. If you know what you are doing already, and you are comfortable messing around with JSON, then probably you are experienced enough to find these tutorials. (Just search for "isort black vscode"). Let's get this working without the chance of breaking your installation of vscode. 
 
 One thing you should do to get started is to check that vscode can run python for you. From the "Terminal" menu at the top, select "New Terminal". You should end up with a prompt: a powershell prompt if you are windows, and a terminal prompt if you are on windows or linux. From the prompt, run python just as you did outside of vscode. It should work just the same. (If not, something is wrong. For example, if you opened this terminal and then installed python, perhaps close the vscode terminal and try again.)
 
@@ -421,25 +421,24 @@ Scroll down more until you see the configuration for linting and select these op
 <p align="center"><img src="images/vsc-flake8.jpg?raw=true" width="75%"></p>
 <p align="center"><img src="images/vsc-lint-on-save.jpg?raw=true" width="75%"></p>
 
-# Other Topics
+Now go back to your python file and adjust the formatting. You should see it change back upon saving the file. With flake8, you will see squiggly colored underlines where there are problems, much like a spell checker in a word document. If you hover over problems, you'll get a tooltip-style hint as to what's run. You can also pull up a list of problems from the status bar at the very bottom (left side) of the vscode window.
 
-To be written. 
+## Adding isort to vscode 
+There are a few tutorials for doing this online, but I don't know that they are helpful for beginners. I'm not sure the following is easy. Proceed at your own risk. 
 
-## Debugging with pdb
+VSCode keeps its settings in a file called "settings.json". JSON is a human-readable format for storing structured values that is written by computers; or maybe it's a computer-readable format for storing structured values that is written by humans. We are going to modify the json file directly. 
 
-To be written. 
 
-## Managing two projects with different requirements 
 
-Your program will be written based on a specific version of Python. It may use features in, say, version 3.9 that are removed in version 3.10. Similarly, you might use a third-party library that might be upgraded in the future. Another problem is that you may be required to use Python 3.9 in one course and Python 3.6 in another course. You really need set up separate "environments" for each project that ensure functionality is preserved and isolated. You can do this with virtual environments and ```venv```.
+# Other Topics you should look into 
 
-To be written. 
+There are many other topics and tools that you should start looking into to improve your ability to code. Future versions of this site will expand on some of them. 
 
-## Other Tools
-
-- [doctest](https://docs.python.org/3/library/doctest.html) The doctest module searches for pieces of text that look like interactive Python sessions, and then executes those sessions to verify that they work exactly as shown.
+- [pdb](https://docs.python.org/3.9/library/pdb.html) is an *essential* tool for debugging. You really need to learn how to run your code in debug mode (hint: it's ```python -m pdb mycode.py```) and then how to navigate your way around the debugger console. If you are debugging with print statements, you are not doing it right.
+- [venv](https://docs.python.org/3.9/library/venv.html) and [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) allow management of two or more python projects with differing requirements. Why does that happen? Well, one of your programs may be written based on a specific version of Python. It may use features in, say, version 3.9 that are removed or altered in version 3.10. Similarly, you might use a third-party library that might be upgraded in the future. Another problem is that you may be required to use Python 3.9 in one course and Python 3.6 in another course. You really need set up separate "environments" for each project that ensure functionality is preserved and isolated. 
+- [doctest](https://docs.python.org/3/library/doctest.html) is a  module that searches for pieces of text that look like interactive Python sessions, and then executes those sessions to verify that they work exactly as shown.
 - [pylint](https://pylint.org) Pylint is a Python static code analysis tool which looks for programming errors, helps enforcing a coding standard, sniffs for code smells and offers simple refactoring suggestions.
-- [pydocstyle](https://pypi.org/project/pydocstyle/). pydocstyle is a static analysis tool for checking compliance with Python docstring conventions.
-- [pyright](https://github.com/Microsoft/pyright). Pyright is a fast type checker meant for large Python source bases. It can run in a “watch” mode and performs fast incremental updates when files are modified.
-- [hypothesis](https://hypothesis.readthedocs.io/en/latest/). A Python library for creating unit tests which are simpler to write and more powerful when run, finding edge cases in your code you wouldn’t have thought to look for.
-- [scalene](https://pypi.org/project/scalene/) Scalene is a high-performance CPU, GPU and memory profiler for Python that does a number of things that other Python profilers do not and cannot do. It runs orders of magnitude faster than other profilers while delivering far more detailed information.
+- [pydocstyle](https://pypi.org/project/pydocstyle/) is a static analysis tool for checking compliance with Python docstring conventions.
+- [pyright](https://github.com/Microsoft/pyright) is a fast type checker meant for large Python source bases. It can run in a “watch” mode and performs fast incremental updates when files are modified.
+- [hypothesis](https://hypothesis.readthedocs.io/en/latest/) is a Python library for creating unit tests which are simpler to write and more powerful when run, finding edge cases in your code you wouldn’t have thought to look for.
+- [scalene](https://pypi.org/project/scalene/)  is a high-performance CPU, GPU and memory profiler for Python that does a number of things that other Python profilers do not and cannot do. It runs orders of magnitude faster than other profilers while delivering far more detailed information.
