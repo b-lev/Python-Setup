@@ -248,7 +248,7 @@ All done! ✨ 🍰 ✨
 
 ```
 
-Or you can do it to every file in a directory. (Can you figure out how to hit all files in subdirectories too?)
+Or you can do it to every file in a directory. (Can you figure out how to hit all files in subdirectories?)
 
 ```
 % black *.py
@@ -258,7 +258,7 @@ It's important to note that Black will not reformat your python file if it conta
 
 Now intro.py should look like this:
 
-```
+    ```
     from random_words import RandomEmails
     from random_words import RandomNicknames
     import random, sys
@@ -283,7 +283,7 @@ Now intro.py should look like this:
 
     if __name__ == "__main__":
         main()
-```
+    ```
 
 That's much nicer! The lines are not too wide. There is some standard spacing between the imports, functions, and the ```if __name__``` clause at the end. It changed the single quotes around exam_score to use double quotes so that it's consistent with the other lines. It even put a space between ```#``` and the comment. Again, before we had a legit Python program that ran correctly. But now we have source that is equivalent and easier to read.
 
