@@ -346,12 +346,13 @@ Just like black, isort changes the source code only if there isn't a syntax erro
 ```
 You'll notice that isort also separated each import into its own line (before random and sys) were together. And it combined all the imports from random_words into one statement. That's clearer formatting for the reader.
 
+Here's the diff of what isort did. Over time, you'll get pretty good at reading diffs. 
 
 <p align="center"><img src="images/after-isort.jpg?raw=true" width="100%"></p>
 
 ## Using flake8 to lint your code
 
-A linter is a program that examines your source code for bad style or errors, and it checks for things in a wide range of categories. The first linter was called [lint](https://en.wikipedia.org/wiki/Lint_(software)) and was written in 1978! 
+A *linter* is a program that examines your source code for bad style or errors, and it checks for things in a wide range of categories. The first linter was called [lint](https://en.wikipedia.org/wiki/Lint_(software)) and was written in 1978! 
 
 [Flake8](https://pypi.org/project/flake8/) (pronounced "flay-kate") is one such linter. It's pretty aggressive and exacting. And I think especially for a beginning, you'll waste a lot of time trying to get rid of all the flake8 warnings. So for now, let's just focus on errors. 
 
