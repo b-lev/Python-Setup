@@ -399,13 +399,26 @@ There are a few tutorials for doing this online, but I don't know that they are 
 
 One thing you should do to get started is to check that vscode can run python for you. From the "Terminal" menu at the top, select "New Terminal". You should end up with a prompt: a powershell prompt if you are windows, and a terminal prompt if you are on windows or linux. From the prompt, run python just as you did outside of vscode. It should work just the same. (If not, something is wrong. For example, if you opened this terminal and then installed python, perhaps close the vscode terminal and try again.)
 
-Make sure intro.py is open and switch to that tab. Look in the bottom left corner. Do you see Python 3.9 listed? Click whatever text is there. (It may ask you to end the path for python. Enter exactly what you entered to run python in the vscode terminal. and then look again.) If it gives you some specific versions of python to chose from --- that's great --- pick version 3.9 something. 
+Make sure intro.py is open and switch to that tab. Look in the bottom left corner. Do you see Python 3.9 listed? Click whatever text is there. (It may ask you to end the path for python. Enter exactly what you entered to run python in the vscode terminal. and then look again.) If it gives you some specific versions of python to chose from --- that's great --- pick version 3.9 something. Here I've got 3.9.10 selected. 
 
 <p align="center"><img src="images/corner.jpg?raw=true" width="50%"></p>
 
 Next hit the "gear" icon and select "Settings".
 
 <p align="center"><img src="images/settings.jpg?raw=true" width="50%"></p>
+
+In the search bar that comes up, type "python" and then you should see "Python" listed below as something you can select.
+
+<p align="center"><img src="images/python-search.jpg?raw=true" width="50%"></p>
+
+Scroll down until you see "Python Formatting Provider" and select "black" from the drop down menu.
+<p align="center"><img src="images/python-search.jpg?raw=true" width="50%"></p>
+
+If you after you make this choice, vscode asks you install black, then certainly let it do that. 
+
+Scroll down more until you see the configuration for linting and select these options.
+<p align="center"><img src="images/vsc-linting.jpg?raw=true" width="50%"></p>
+<p align="center"><img src="images/vsc-lint-on-save.jpg?raw=true" width="50%"></p>
 
 # Other Topics
 
