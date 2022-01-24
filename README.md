@@ -379,7 +379,7 @@ Did you try switching on the history tab? You should be able to see each commit 
 
 # Running black, isort, and flake8 in VSCode
 
-This is a great set of tools. And you have the option of running them when you are done, intermittently, or as much as possible. It turns out that the best option is to run them as much as possible. But no one wants to save a file and then switch to the terminal, run the three commands, and then switch back to the editor. That's terribly inefficient. 
+This is a great set of tools. And you have the option of running them when you are done with a project, intermittently while you code, or as much as possible. It turns out that the best option is to run them as much as possible. But no one wants to save a file and then switch to the terminal, run the three commands, and then switch back to the editor. That's terribly inefficient. 
 
 What we are going to do instead of configure vscode to run the three tools each time we save our source code. 
 
