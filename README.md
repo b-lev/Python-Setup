@@ -80,18 +80,18 @@ Now you are ready. Do the following per project or assignment that you start.
 <p align="center"><img src="images/publish-dialog.jpg?raw=true" width="50%"></p>
 
 
-Success! You should be to see your new repository on Github. 
+Success! You should be to see your new repository on Github. Because the repository is private, you have to log in to see it. (But you are probably still logged in.)
 
 
 # Starting the editor
 
-There are many ways to interact with python. We are going to focus on using an editor to save files to your local disk and then running the files from a command line terminal. Some people swear by emacs and vi/vim. Another option is to use ipython. Here, we are going to focus on using Visual Studio Code (vscode, for short). Over time, your choice of editor will be a deep deliberate decision. It's akin to selecting a particular guitar to buy (acoustic or electric? single coil or humbuckers? etc.) in that it's a tool that let's perform at your best. VS Code has advanced features appropriate for professionals, but generally can be used by computer science students who don't need to go crazy with every single setting and plug-ins. 
+There are many ways to interact with python. We are going to focus on using an editor to save files to your local disk and then running the files from a command line terminal.  In terms of editors, some people swear by emacs or vim. Another option is to use ipython. Here, we are going to focus on using Visual Studio Code (vscode, for short). Over time, your choice of editor will be a deep, deliberate decision. The choice is akin to selecting a particular guitar  (acoustic or electric? single coil or humbuckers? etc.) in that it's a tool that let's you perform at your best. VSCode has advanced features appropriate for professionals, but generally can be used by new computer science students without going crazy with every single setting and plug-in available. 
 
-VSCode generally operates the same for all operating systems. (The main difference is the specific shortcut keys used to do things quickly, like save or open files. And so I'm going to try and not specify the shortcut key press to make something happen. A very small bit of advice though is that as a programmer, you don't want to ever have to use a mouse or trackpad; they'll just slow you down.)
+VSCode generally operates and looks just about the same for all operating systems. (The main difference is the specific shortcut keys used to do things quickly, for example to  save or open files. And so I'm going to try and not specify the shortcut key pressed to make something happen. But a very small bit of advice  is that as a programmer, you don't want to ever have to use a mouse or trackpad; they just slow you down.)
 
 Once you've downloaded and installed vscode, you'll see a screen like this:
 
-<p align="center"><img src="images/vscode-first-screen.jpg?raw=true|" width="50%"></p>
+<p align="center"><img src="images/vscode-first-screen.jpg?raw=true|" width="75%"></p>
 
 You might be tempted to use vscode to open up a new file. Don't use vscode to open a file. Instead, use it open a **directory**. Select "Open Folder" from the file menu and open up the directory containing the repository you've created for this tutorial.
 
