@@ -64,9 +64,9 @@ Now you are ready. Do the following per project or assignment that you start.
      - Any short name works. For this demonstration use "tutorial-example". 
      - Description is not important, leave it blank or fill it out. 
      - The *local path* should be the full path to your "github" subdirectory that you created already. 
-     - Click the "initialize this repository with a README" because we want one.
-     - For the "Git Ignore" dropdown menu, select "Python".
-     - For "License" just leave it as "None" as we are going to create a private repository (i.e., one that the world can't access).
+     - Click the box for "initialize this repository with a README" because we want a Readme file.
+     - From the "Git Ignore" dropdown menu, select "Python".
+     - Leave the  "License" dropdown menu selection as "None". We are going to create a private repository (i.e., one that the world can't access).
 
 1. Publish your repository on github by clicking the "publish repository" button. (If you haven't linked your Github Desktop to your Github account using the preferences->accounts dialog, as I discussed above, this step won't work.)
 
