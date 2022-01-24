@@ -236,7 +236,7 @@ The same is true for code. When we see code formatted in an expected fashion, it
 
 There are style guides [out there](https://google.github.io/styleguide/pyguide.html) that can help you format your code to common expectations and styles. I used to tell my students that they had to follow one style guide or another during the semester. But they are hard to ingest and incorporate consistently. 
 
-A better way to format your code to ensure it meets a given style is to let a program format it for you. Black is one such formatter that I recommend. Here's it's pypi.org page (you know what to do to install it!): https://pypi.org/project/black/
+A better way to format your code to ensure it meets a given style is to let a program format it for you. Black is one such formatter that I recommend. Here is its pypi.org page (you know what to do to install it!): https://pypi.org/project/black/
 
 Once you have it installed, you can run it as 
 
