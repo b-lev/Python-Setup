@@ -13,7 +13,7 @@
 
 
 # Introduction
-This page provides some general advice on how to set up your local environment to code proficiently with Python. These instructions are not the simplest way to set up your environment. These instructions are step toward how a professional might set up their environment. It's a foundation: from here you can keep adding new tools as you gain experience. 
+This page provides some general advice on how to set up your local environment to code proficiently with Python. These instructions are not the simplest way to set up your environment. These instructions are a step toward how a professional might set up their environment. It's a foundation: from here you can keep adding new tools as you gain experience. 
 
 In the examples below, we are going to focus on Python 3.9, and we'll give version numbers for all other tools so that you can avoid unexpected errors. 
 
