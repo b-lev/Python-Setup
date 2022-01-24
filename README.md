@@ -128,7 +128,7 @@ Before you get this code to run, you'll need to install the randomwords library.
 
 # Installing third-party library with pip
 
-Try to run our little python program. The intent is to create a Python dictionary of randomly chosen student details. You should get an error when you run it. Open a terminal, and change to the directory containing the repository and saved intro.py file:
+Try to run our little python program. The intent is to create a Python dictionary of randomly chosen student details.  Open a terminal, and change to the directory containing the repository and saved intro.py file. Then call python on the file. You should get an error when you run it.
 
 ```
 % cd github/tutorial-example 
@@ -139,7 +139,7 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'random_words'
 ```
 
-Python ships with a large set of [standard libraries](https://docs.python.org/3.9/library/index.html). There a ton of high-quality third-party libraries available as well. (The source code for many  third party libraries is often stored  on github, it turns out.) In the code above, you can see that I've used the random_words library. 
+Python ships with a large set of [standard libraries](https://docs.python.org/3.9/library/index.html). There a ton of high-quality third-party libraries available as well. (The source code for many  third party libraries is often stored  on github, it turns out.) In the code above, you can see that I've used the random_words library, but it's not installed on your computer yet. 
 
 For any good third party library, there are typical two important websites: it's pypi.org page containing documentation and it's homepage. (It turns out that most of the time, the homepage for a library is typically github.) For random_words, they are:
 
