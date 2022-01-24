@@ -162,7 +162,7 @@ Collecting randomwords
 Installing collected packages: randomwords
 Successfully installed randomwords-0.3.0
 ```
-Note that the install name is different than the module name. Actually the uppercase and lowercase letters don't matter. The removal of the underscore is important. You can't do ```pip install random_words``` successfully. This difference exists for a sizeable number of libraries.
+Note that the install name is different than the module name. Actually the uppercase and lowercase letters don't matter. The removal of the underscore is important. You can't do ```pip install random_words``` successfully. This difference exists for a sizeable number of libraries. A common pattern is that you would ```import foo``` in your code,  but you need to ```pip install pyfoo``` at the terminal.
 
 The command above will install the latest version of randomwords. If you want to install a specific version, you can do a double equals and the version number: ```pip install RandomWords==0.3.0```.
 
