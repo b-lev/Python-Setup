@@ -354,7 +354,7 @@ Here's the diff of what isort did. Over time, you'll get pretty good at reading 
 
 A *linter* is a program that examines your source code for bad style or errors, and it checks for things in a wide range of categories. The first linter was called [lint](https://en.wikipedia.org/wiki/Lint_(software)) and was written in 1978! 
 
-[Flake8](https://pypi.org/project/flake8/) (pronounced "flay-kate") is one such linter. It's pretty aggressive and exacting. And I think especially for a beginning, you'll waste a lot of time trying to get rid of all the flake8 warnings. So for now, let's just focus on errors. 
+[Flake8](https://pypi.org/project/flake8/) (pronounced "flay-kate") is one such linter. It's pretty aggressive and exacting. And I think especially for a beginning programmer, you'll waste a lot of time trying to get rid of all the flake8 warnings. So for now, let's just focus on errors. 
 
 Because there have been some changes to flake8 over the years, in this case to follow along, please make sure you are version 4 of flake8 using the following command
 
