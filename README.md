@@ -19,6 +19,12 @@ In the examples below, we are going to focus on Python 3.9, and we'll give versi
 
 All tools are free. (And I have no relationship with the third parties who have made the tools.)
 
+## Learning python
+
+There are many resources for learning python for the first time or for sharpening your skills.
+
+- https://pythontutor.com
+- https://swcarpentry.github.io/python-novice-inflammation/
 
 # Getting all the tools installed
 
@@ -124,6 +130,9 @@ To get the code into your editor, follow these steps.
     if __name__ == "__main__":
         main()
     ```
+
+At this point, if vscode asks if you want to install the "python extension", then yes definitely please do it. It might take a minute to install. 
+
 Before you get this code to run, you'll need to install the randomwords library. It doesn't come with python. 
 
 # Installing third-party library with pip
@@ -381,20 +390,42 @@ Did you try switching on the history tab? You should be able to see each commit 
 
 This is a great set of tools. And you have the option of running them when you are done with a project, intermittently while you code, or as much as possible. It turns out that the best option is to run them as much as possible. But no one wants to save a file and then switch to the terminal, run the three commands, and then switch back to the editor. That's terribly inefficient. 
 
-What we are going to do instead of configure vscode to run the three tools each time we save our source code. 
+Let's instead of configure vscode to run the three tools each time we save our source code. Now, VSCode makes this a little intimidating because there isn't a menu option to do it. So we'll need to take a few steps. 
 
-# Advanced Topics
+First, if you haven't already, install the "python extension". One way to do that is to visit [this page](https://marketplace.visualstudio.com/items?itemName=ms-python.python) and click the green install button.
+
+First we want to open the "Command Pallette". You can do that from the "View" menu. On a mac you can hold down "command" and "shift" and then "P". On windows its "ctrl" and "shift" and then "P". Linux is something similar. You should see something like this:
+
+<p align="center"><img src="images/command-pal.jpg?raw=true" width="50%"></p>
+
+Select "Preferences: Open Settings (JSON)". If you don't see that listed, start typing it out until you do. Be sure you have ">" at the beginning of the entry box you are typing into. If you haven't seen it before, JSON is a human-readable way that computers can store data in structured dictionaries and lists and such. (Or you can think of it as a computer-readable way that humans can store data in structured dictionaries and lists and such.)
+
+vscode should open up a new tab, and if you really have fresh install of vscode, then you probably just see two lines like so:
+
+<p align="center"><img src="images/blank-json.jpg?raw=true" width="50%"></p>
+
+
+
+# Other Topics
+
+To be written. 
 
 ## Debugging with pdb
 
-TBW
+To be written. 
 
 ## Managing two projects with different requirements 
 
-Your program will be written based on a specific version of Python. It may use features in, say, version 3.9 that are removed in version 3.10. Similarly, you might use a third-party library that might be upgraded in the future. Another problem is that you may be required to use Python 3.9 in one course and Python 3.6 in another course. In this section, we'll learn to set up separate "environments" for each project that ensure functionality is preserved and isolated. 
+Your program will be written based on a specific version of Python. It may use features in, say, version 3.9 that are removed in version 3.10. Similarly, you might use a third-party library that might be upgraded in the future. Another problem is that you may be required to use Python 3.9 in one course and Python 3.6 in another course. You really need set up separate "environments" for each project that ensure functionality is preserved and isolated. You can do this with virtual environments and ```venv```.
 
-## Other linters
+To be written. 
 
-- pylint
-- pydocstyle
+## Other Tools
 
+- [doctest](https://docs.python.org/3/library/doctest.html) The doctest module searches for pieces of text that look like interactive Python sessions, and then executes those sessions to verify that they work exactly as shown.
+- [pylint](https://pylint.org) Pylint is a Python static code analysis tool which looks for programming errors, helps enforcing a coding standard, sniffs for code smells and offers simple refactoring suggestions.
+
+- [pydocstyle](https://pypi.org/project/pydocstyle/). pydocstyle is a static analysis tool for checking compliance with Python docstring conventions.
+- [pyright](https://github.com/Microsoft/pyright). Pyright is a fast type checker meant for large Python source bases. It can run in a “watch” mode and performs fast incremental updates when files are modified.
+- [hypothesis](https://hypothesis.readthedocs.io/en/latest/). A Python library for creating unit tests which are simpler to write and more powerful when run, finding edge cases in your code you wouldn’t have thought to look for.
+- [scalene](https://pypi.org/project/scalene/) Scalene is a high-performance CPU, GPU and memory profiler for Python that does a number of things that other Python profilers do not and cannot do. It runs orders of magnitude faster than other profilers while delivering far more detailed information.
