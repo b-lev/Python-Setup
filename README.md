@@ -73,6 +73,14 @@ Success! You should be to see your new repository on Github.
 
 ![Image](images/add-intro-py-2.jpg?raw=true|width=30px)
 
+<img src="images/add-intro-py-2.jpg?raw=true|" width="48px">
+
+<img src="images/add-intro-py-2.jpg?raw=true|" width="48px">
+
+<img src="https://raw.githubusercontent.com/b-lev/Python-Setup/intro/images/add-intro-py-2.jpg?token=GHSAT0AAAAAABQ26ZBHOAZ52AQCEH3PJFGKYPXGBTQ" width="48px">
+
+<img src="https://raw.githubusercontent.com/b-lev/Python-Setup/intro/images/add-intro-py-2.jpg?raw=true" width="48px">
+
 # Starting the editor
 
 There are many ways to interact with python. We are going to focus on using an editor to save files to your local disk and then running the files from a command line terminal. Some people swear by emacs and vi/vim. Another option is to use ipython. Here, we are going to focus on using Visual Studio Code (vscode, for short). Over time, your choice of editor will be a deep deliberate decision. It's akin to selecting a particular guitar to buy (acoustic or electric? single coil or humbuckers? etc.) in that it's a tool that let's perform at your best. VS Code has advanced features appropriate for professionals, but generally can be used by computer science students who don't need to go crazy with every single setting and plug-ins. 
