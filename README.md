@@ -75,7 +75,7 @@ Now you are ready. Do the following per project or assignment that you start.
 
 
 
-1. Now a dialog window will show up, and you probably don't need to adjust anything. *Important* Make sure the box for "Keep this code private" is checked. If you are creating a repository for a course assignment, you would be violated academic honesty policies by making your code public.
+1. Now a dialog window will show up, and you probably don't need to adjust anything. *Important* Make sure the box for "Keep this code private" is checked. If you are creating a repository for a course assignment, **you would be violating academic honesty policies by making your code public**.
 
 <p align="center"><img src="images/publish-dialog.jpg?raw=true" width="50%"></p>
 
