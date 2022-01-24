@@ -131,6 +131,7 @@ Before you get this code to run, you'll need to install the randomwords library.
 Python ships with a large set of [standard libraries](https://docs.python.org/3.9/library/index.html). There a ton of high-quality third-party libraries available as well. (The source code for many  third party libraries is often stored  on github, it turns out.) In the code above, you can see that I've used the random_words library. 
 
 For any good third party library, there are typical two important websites: it's pypi.org page containing documentation and it's homepage. (It turns out that most of the time, the homepage for a library is typically github.) For random_words, they are:
+
     - documentation: https://pypi.org/project/RandomWords/
     - homepage: https://github.com/tomislater/RandomWords
 
