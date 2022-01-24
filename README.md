@@ -209,12 +209,13 @@ Git and tools like it help you in that goal. If the above story isn't convincing
 Lastly, git will help you break your coding up into management micro-goals. When you code, consider the micro-goal you want to achieve. Maybe your goal is to write a method that saves some data to a file. Once the function seems to be working correctly, then tell git about your progress as a *commit* to the repository. To be clear, commit the source code is very different than saving it to your local file system.
 
 To show you how to commit, we are going to commit the code you pasted above into intro.py.
-    - Open Github Desktop
-    - Make sure you are in our new repository. It should be listed in the top left of the window.
-    - You should see intro.py listed with a check box. Make sure it is checked. It should be the only file checked of anything listed. (mac users might see a pesky .DS_store file listed.)
-    - Github Desktop tries to be helpful here by putting in a comment for us. It won't do that if you check in more than one file.
-    - Notice the green plus -- that's a visual indication that we are adding a file to the list that git will track for us.
-    - Click the blue "Commit to 
+
+- Open Github Desktop
+- Make sure you are in our new repository. It should be listed in the top left of the window.
+- You should see intro.py listed with a check box. Make sure it is checked. It should be the only file checked of anything listed. (mac users might see a pesky .DS_store file listed.)
+- Github Desktop tries to be helpful here by putting in a comment for us. It won't do that if you check in more than one file.
+- Notice the green plus -- that's a visual indication that we are adding a file to the list that git will track for us.
+- Click the blue "Commit to 
 
 
 <p align="center"><img src="images/add-intro-py.jpg?raw=true" width="50%"></p>
