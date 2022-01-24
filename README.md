@@ -258,32 +258,32 @@ It's important to note that Black will not reformat your python file if it conta
 
 Now intro.py should look like this:
 
-    ```
-    from random_words import RandomEmails
-    from random_words import RandomNicknames
-    import random, sys
-    from pprint import pp
+```
+from random_words import RandomEmails
+from random_words import RandomNicknames
+import random, sys
+from pprint import pp
 
 
-    def main():
-        # create a dictionary of random nicknames
-        roster = dict()
-        random_nicknames = RandomNicknames()
-        random_emails = RandomEmails()
-        students = random_nicknames.random_nicks(count=10)
-        for name in students:
-            roster[name] = {
-                "email": random_emails.randomMail(),
-                "exam_score": random.randint(1, 100),
-                "homework_score": random.randint(1, 100),
-            }
+def main():
+    # create a dictionary of random nicknames
+    roster = dict()
+    random_nicknames = RandomNicknames()
+    random_emails = RandomEmails()
+    students = random_nicknames.random_nicks(count=10)
+    for name in students:
+        roster[name] = {
+            "email": random_emails.randomMail(),
+            "exam_score": random.randint(1, 100),
+            "homework_score": random.randint(1, 100),
+        }
 
-        pp(roster)
+    pp(roster)
 
 
-    if __name__ == "__main__":
-        main()
-    ```
+if __name__ == "__main__":
+    main()
+```
 
 That's much nicer! The lines are not too wide. There is some standard spacing between the imports, functions, and the ```if __name__``` clause at the end. It changed the single quotes around exam_score to use double quotes so that it's consistent with the other lines. It even put a space between ```#``` and the comment. Again, before we had a legit Python program that ran correctly. But now we have source that is equivalent and easier to read.
 
