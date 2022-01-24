@@ -99,7 +99,9 @@ The  most important icon for us right now is on the top left: "Explorer" (two st
 
 Click on the Explorer icon once. The list of files you are working with appear. Click it again, and the little side window goes away. We haven't done anything yet, and so almost no files are there. 
 
-This isn't a tutorial on how to program in python. And so I'm going to just give you a little bit of code to play with.  Follow these steps.
+This isn't a tutorial on how to program in python. And so I'm going to just give you a little bit of code to play with and assume that you can basically follow what's going on.  
+
+To get the code into your editor, follow these steps.
 
 - From vscode's "File" menu, select "New File". It should create new tab called "Untitled-1". 
 - Copy and paste the code below into the tab and save it to a file called "intro.py" in your repository. There are some weaknesses in this code. We are going to use some other tools to make it a little nicer in a minute.
