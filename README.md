@@ -39,7 +39,7 @@ There are many resources for learning python for the first time or for sharpenin
     
     Once you get a python prompt of ```>>>```, you are good. To quit you can type ```exit()``` and hit return. 
 
-    The command to run it much be slightly different depending on how you installed it and what OS you are running. For example, on windows I've seen it installed as ```py.exe```. It's important that it says "3.9.5" or something close to that (like 3.9.9). The "3.9" is the important part. If you see anything else (like 2.7 or 3.10), you can try to start python with ```python3.9" instead for example. 
+    The command to run it much be slightly different depending on how you installed it and what OS you are running. For example, on windows I've seen it installed as ```py.exe```. It's important that it says "3.9.5" or something close to that (like 3.9.9). The "3.9" is the important part. If you see anything else (like 2.7 or 3.10), you can try to start python with ```python3.9``` instead for example. 
 
 1. Create an account on [github](https://github.com/join). There is no need to sign up for a paid plan. 
 
