@@ -57,6 +57,9 @@ Now that you did it, do the following per project.
 
 1. Open Github Desktop and select "New Repository..."
 
+
+<img src="create.jpg?raw=true" width="50%">
+
 1. Enter the details. 
      - Any short name works. For this demonstration use "tutorial-example". 
      - Description is not important, leave it blank or fill it out. 
@@ -67,19 +70,16 @@ Now that you did it, do the following per project.
 
 1. Publish your repository on github by clicking the "publish repository" button. (If you haven't linked your Github Desktop to your Github account using the preferences->accounts dialog, as I discussed above, this step won't work.)
 
+
+<img src="publish.jpg?raw=true" width="50%">
+
+
+<img src="publish-dialog.jpg?raw=true" width="50%">
+
 1. Now a dialog window will show up, and you probably don't need to adjust anything. *Important* Make sure the box for "Keep this code private" is checked. If you are creating a repository for a course assignment, you would be violated academic honesty policies by making your code public.
 
 Success! You should be to see your new repository on Github. 
 
-![Image](images/add-intro-py-2.jpg?raw=true|width=30px)
-
-<img src="images/add-intro-py-2.jpg?raw=true|" width="48px">
-
-<img src="images/add-intro-py-2.jpg?raw=true|" width="48px">
-
-<img src="https://raw.githubusercontent.com/b-lev/Python-Setup/intro/images/add-intro-py-2.jpg?token=GHSAT0AAAAAABQ26ZBHOAZ52AQCEH3PJFGKYPXGBTQ" width="48px">
-
-<img src="https://raw.githubusercontent.com/b-lev/Python-Setup/intro/images/add-intro-py-2.jpg?raw=true" width="48px">
 
 # Starting the editor
 
@@ -88,6 +88,8 @@ There are many ways to interact with python. We are going to focus on using an e
 VSCode generally operates the same for all operating systems. (The main difference is the specific shortcut keys used to do things quickly, like save or open files. And so I'm going to try and not specify the shortcut key press to make something happen. A very small bit of advice though is that as a programmer, you don't want to ever have to use a mouse or trackpad; they'll just slow you down.)
 
 Once you've downloaded and installed vscode, you'll see a screen like this:
+
+<img src="vscode-first-screen.jpg?raw=true|" width="50%">
 
 You might be tempted to use vscode to open up a new file. Don't use vscode to open a file. Instead, use it open a **directory**. Select "Open Folder" from the file menu and open up the directory containing the repository you've created for this tutorial.
 
@@ -204,9 +206,15 @@ To show you how to commit, we are going to commit the code you pasted above into
     - Notice the green plus -- that's a visual indication that we are adding a file to the list that git will track for us.
     - Click the blue "Commit to 
 
+
+<img src="add-intro-py.jpg?raw=true" width="50%">
+
+<img src="push.jpg?raw=true" width="50%">
+
+
 # Standardizing your source code
 
-It's hard to sight read code. That is, it's hard to just look at code and read it as easily as you might read a book. It takes experience and talent. But even for reading prose books, we expect the presentation to follow certain conventions. Margins, chapter titles, larger and smaller fonts, the use of bold and italics, and separation of paragraphs with vertical space or indentations are helpful for comprehension, even if they aren't strictly part of engish grammar. 
+It's hard to sight read code. That is, it's hard to just look at code and read it as easily as you might read a book. It takes experience and talent. But even for reading prose books, we expect the presentation to follow certain conventions. Margins, chapter titles, larger and smaller fonts, the use of bold and italics, and [separation of paragraphs](images/ducks.jpg) with vertical space or indentations are helpful for comprehension, even if they aren't strictly part of english grammar. 
 
 The same is true for code. When we see code formatted in an expected fashion, it improves comprehension for the reader. And comprehension is really important for yourself (so that you don't miss bugs), for your TA (so that they can help you squash a bug), and for your professional colleagues (so that they build on your code and help you squash bugs).
 
@@ -271,9 +279,14 @@ Black is so useful that I promise you that once you start using it consistently,
 There is more we can do to clean up our code, but let's pause for a minute and talk about git/github again. 
 
 
+<img src="after-black.jpg?raw=true" width="50%">
+
 # Check in changes to github
 
 Github desktop has a nice display of the differences you've made to your code. 
+
+
+<img src="github-split.jpg?raw=true" width="50%">
 
 # Using isort to sort your imports
 
@@ -316,6 +329,9 @@ Just like black, isort changes the source code only if there isn't a syntax erro
 ```
 You'll notice that isort also separated each import into its own line (before random and sys) were together. And it combined all the imports from random_words into one statement. That's clearer.
 
+
+<img src="after-isort.jpg?raw=true" width="50%">
+
 ## Using flake8 to lint your code
 
 A linter is a program that examines your source code for bad style or errors, and it checks for things in a wide range of categories. The first linter was called [lint](https://en.wikipedia.org/wiki/Lint_(software)) and was written in 1978! 
@@ -334,6 +350,12 @@ intro.py:2:1: F401 'sys' imported but unused
 ```
 
 Ah ha! Did you notice that we imported ```sys``` but it wasn't used in our code. That's ugly. Flake8 won't fix that problem, you need to go into vscode to fix it.  If you do that and save the file, you'll note that when you run flake8 again, it won't complain. It doesn't congratulate you for having no errors. 
+
+
+<img src="after-flake8.jpg?raw=true" width="50%">
+
+
+<img src="commit.jpg?raw=true" width="50%">
 
 # Running black, isort, and flake8 in VSCode
 
