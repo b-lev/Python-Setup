@@ -110,7 +110,7 @@ To get the code into your editor, follow these steps.
     from random_words import RandomEmails
     from random_words import RandomNicknames
     import random, sys
-    from pprint import pp
+    from pprint import pprint
     def main():
         #create a dictionary of random nicknames
         roster = dict()
@@ -120,7 +120,7 @@ To get the code into your editor, follow these steps.
         for name in students :
             roster[name] = {"email": random_emails.randomMail(),'exam_score': random.randint(1, 100),"homework_score": random.randint(1, 100)        }
 
-        pp(roster)
+        pprint(roster)
     if __name__ == "__main__":
         main()
     ```
@@ -262,7 +262,7 @@ Now intro.py should look like this:
 from random_words import RandomEmails
 from random_words import RandomNicknames
 import random, sys
-from pprint import pp
+from pprint import pprint
 
 
 def main():
@@ -278,7 +278,7 @@ def main():
             "homework_score": random.randint(1, 100),
         }
 
-    pp(roster)
+    pprint(roster)
 
 
 if __name__ == "__main__":
@@ -320,7 +320,7 @@ Just like black, isort changes the source code only if there isn't a syntax erro
 ```
     import random
     import sys
-    from pprint import pp
+    from pprint import pprint
 
     from random_words import RandomEmails, RandomNicknames
 
@@ -338,7 +338,7 @@ Just like black, isort changes the source code only if there isn't a syntax erro
                 "homework_score": random.randint(1, 100),
             }
 
-        pp(roster)
+        pprint(roster)
 
 
     if __name__ == "__main__":
