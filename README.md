@@ -51,8 +51,8 @@ Here the steps you should go through for at least each course you are in, if not
 
 Before you get started, make sure you do the following steps, each once ever:
 
-    - Create a subdirectory for using git from home directory, or your documents directory, or something similar. Call it "github". You need only do this once ever. 
-    - Link Github Desktop to your GitHub account. To do that, go to "Preferences" and then select "Accounts" and then sign in your Github account. 
+- Create a subdirectory for using git from home directory, or your documents directory, or something similar. Call it "github". You need only do this once ever. 
+- Link Github Desktop to your GitHub account. To do that, go to "Preferences" and then select "Accounts" and then sign in your Github account. 
 
 Now that you did it, do the following per project.
 
