@@ -409,17 +409,17 @@ Next hit the "gear" icon and select "Settings".
 
 In the search bar that comes up, type "python" and then you should see "Python" listed below as something you can select.
 
-<p align="center"><img src="images/python-search.jpg?raw=true" width="50%"></p>
+<p align="center"><img src="images/python-search.jpg?raw=true" width="75%"></p>
 
 Scroll down until you see "Python Formatting Provider" and select "black" from the drop down menu.
-<p align="center"><img src="images/python-search.jpg?raw=true" width="50%"></p>
+<p align="center"><img src="images/python-search.jpg?raw=true" width="75%"></p>
 
 If you after you make this choice, vscode asks you install black, then certainly let it do that. 
 
 Scroll down more until you see the configuration for linting and select these options.
-<p align="center"><img src="images/vsc-linting.jpg?raw=true" width="50%"></p>
-<p align="center"><img src="images/vsc-flake8.jpg?raw=true" width="50%"></p>
-<p align="center"><img src="images/vsc-lint-on-save.jpg?raw=true" width="50%"></p>
+<p align="center"><img src="images/vsc-linting.jpg?raw=true" width="75%"></p>
+<p align="center"><img src="images/vsc-flake8.jpg?raw=true" width="75%"></p>
+<p align="center"><img src="images/vsc-lint-on-save.jpg?raw=true" width="75%"></p>
 
 # Other Topics
 
