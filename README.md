@@ -227,14 +227,14 @@ That's it! You pushed your first commit!
 
 # Standardizing your source code
 
-It's hard to sight read code. That is, it's hard to just look at code and read it as easily as you might read a book. It takes experience and talent. But even for reading prose books, for which we are all experts by now, we expect the presentation to follow certain conventions: reasonably wide margins, chapters numbered with titles and larger fonts, the use of bold and italics for emphasis, and [separation of paragraphs](images/ducks.jpg?raw=true) with vertical space or indentations are all helpful for comprehension, even if they aren't strictly part of english grammar. 
+It's hard to sight read code. That is, it's hard to just look at code and read it as easily as you might read a book. It takes experience and talent. But even for reading prose books, for which we are all experts by now, we expect the presentation to follow certain conventions: reasonably wide margins, chapters numbered with titles and larger fonts, the use of bold and italics for emphasis, and the [separation of paragraphs](images/ducks.jpg?raw=true) with vertical space or indentations are all helpful for comprehension, even if they aren't strictly part of english grammar. 
 
-The same is true for code. When we see code formatted in an expected fashion, it improves comprehension for the reader. And comprehension is really important for yourself (so that you don't miss bugs), for your TA (so that they can help you squash a bug), and for your professional colleagues (so that they build on your code and help you squash bugs).
+The same is true for code. When we see code formatted in an expected fashion, it improves comprehension for us as the reader. And comprehension is really important for yourself (so that you don't miss bugs), for your TA (so that they can help you squash a bug), and for your professional colleagues (so that they build on your code and help you squash bugs).
 
 
 ## Using Black to format your code
 
-There are style guides [out there](https://google.github.io/styleguide/pyguide.html) that can help you do that. I used to tell my students that they had to follow one style guide or another during the semester. But they are hard to ingest and incorporate consistently. 
+There are style guides [out there](https://google.github.io/styleguide/pyguide.html) that can help you format your code to common expectations and styles. I used to tell my students that they had to follow one style guide or another during the semester. But they are hard to ingest and incorporate consistently. 
 
 A better way to format your code to ensure it meets a given style is to let a program format it for you. Black is one such formatter that I recommend. Here's it's pypi.org page (you know what to do to install it!): https://pypi.org/project/black/
 
