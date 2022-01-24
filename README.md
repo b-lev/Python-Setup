@@ -354,24 +354,26 @@ Here's the diff of what isort did. Over time, you'll get pretty good at reading 
 
 A *linter* is a program that examines your source code for bad style or errors, and it checks for things in a wide range of categories. The first linter was called [lint](https://en.wikipedia.org/wiki/Lint_(software)) and was written in 1978! 
 
-[Flake8](https://pypi.org/project/flake8/) (pronounced "flay-kate") is one such linter. It's pretty aggressive and exacting. And I think especially for a beginning programmer, you'll waste a lot of time trying to get rid of all the flake8 warnings. So for now, let's just focus on errors. 
+[Flake8](https://pypi.org/project/flake8/) (pronounced "flay-kate") is one such linter. It's pretty aggressive and exacting. And I think especially for a beginning programmer, you'll waste a lot of time trying to get rid of all the flake8 *warnings*. So for now, let's just focus on flake8 *errors*. 
 
-Because there have been some changes to flake8 over the years, in this case to follow along, please make sure you are version 4 of flake8 using the following command
+I've installed version 4.0.1. Recall that you can install a specific version like so:
 
 ```% pip install flake8==4.0.1
 ```
-
 After you pip install it, run it with these arguments to show only the errors:
 
 ```% flake8 --ignore=E intro.py
 intro.py:2:1: F401 'sys' imported but unused
 ```
 
-Ah ha! Did you notice that we imported ```sys``` but it wasn't used in our code. That's ugly. Flake8 won't fix that problem, you need to go into vscode to fix it.  If you do that and save the file, you'll note that when you run flake8 again, it won't complain. It doesn't congratulate you for having no errors. 
+Ah ha! Did you notice that we imported ```sys``` but it wasn't used in our code. That's ugly. Flake8 won't fix that problem --- you need to make the change yourself in vscode to fix it.  If you do that and save the file, you'll note that when you run flake8 again, it won't complain. It doesn't congratulate you for having no errors in the friendly way that Black does. 
 
+Here's the diff from making this change. 
+<p align="center"><img src="images/after-flake8.jpg?raw=true" width="100%"></p>
 
-<p align="center"><img src="images/after-flake8.jpg?raw=true" width="50%"></p>
+## Looking back and old commits
 
+Did you try switching on the history tab? You should be able to see each commit you've made during the tutorial. For each commit, you can see diff against the previous commit. Notice in this screen grab, my most recent commit has an up arrow --- that means I haven't push to the cloud yet. 
 
 <p align="center"><img src="images/commit.jpg?raw=true" width="50%"></p>
 
