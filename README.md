@@ -295,7 +295,7 @@ There is more we can do to clean up our code, but let's pause for a minute and t
 
 # Check in changes to github
 
-Github Desktop has a nice display of the differences you've made to your code with black. That's so very convenient!
+Github Desktop has a nice display of the differences you've made to your code with black. That's so very convenient! It's probably obvious that red means "removed" and green means "added". I will caution you that this diff is correct about 96.5% of the time. Sometimes the diff is just wrong for complicated changes where code is rearranged heavily. These are pretty straightforward changes and the diff is correct. 
 
 <p align="center"><img src="images/after-black.jpg?raw=true" width="100%"></p>
 
