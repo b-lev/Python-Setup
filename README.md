@@ -372,7 +372,7 @@ I've installed version 4.0.1. Recall that you can install a specific version lik
 ```
 After you pip install it, run it with these arguments to show only the errors:
 
-```% flake8 --ignore=E intro.py
+```% flake8 --select=F intro.py
 intro.py:2:1: F401 'sys' imported but unused
 ```
 
@@ -418,6 +418,7 @@ If you after you make this choice, vscode asks you install black, then certainly
 
 Scroll down more until you see the configuration for linting and select these options.
 <p align="center"><img src="images/vsc-linting.jpg?raw=true" width="50%"></p>
+<p align="center"><img src="images/vsc-flake8.jpg?raw=true" width="50%"></p>
 <p align="center"><img src="images/vsc-lint-on-save.jpg?raw=true" width="50%"></p>
 
 # Other Topics
