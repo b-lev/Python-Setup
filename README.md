@@ -46,7 +46,7 @@ There are many resources for learning python for the first time or for sharpenin
 
 1. Download and install [github desktop](https://desktop.github.com). You can use git from a terminal, but this app is way easier.
 
-1. [Download](https://code.visualstudio.com/Download) Visual Studio Code. 
+1. Download and install [Visual Studio Code](https://code.visualstudio.com/Download) . 
 
 # Create a repository 
 
