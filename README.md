@@ -91,7 +91,7 @@ VSCode generally operates and looks just about the same for all operating system
 
 Once you've downloaded and installed vscode, you'll see a screen like this:
 
-<p align="center"><img src="images/vscode-first-screen.jpg?raw=true|" width="75%"></p>
+<p align="center"><img src="images/vscode-first-screen.jpg?raw=true" width="75%"></p>
 
 You might be tempted to use vscode to open up a new file. Don't use vscode to open a file. Instead, use it open a **directory**. Select "Open Folder" from the file menu and open up the directory containing the repository you've created for this tutorial.
 
