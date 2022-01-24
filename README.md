@@ -295,13 +295,13 @@ There is more we can do to clean up our code, but let's pause for a minute and t
 
 # Check in changes to github
 
-Github Desktop has a nice display of the differences you've made to your code with black. 
+Github Desktop has a nice display of the differences you've made to your code with black. That's so very convenient!
 
 <p align="center"><img src="images/after-black.jpg?raw=true" width="100%"></p>
 
 Your view may look slightly different. Note that I have these settings configured: 
 
-<p align="center"><img src="images/github-split.jpg?raw=true" width="100%"></p>
+<p align="center"><img src="images/github-split.jpg?raw=true" width="50%"></p>
 
 # Using isort to sort your imports
 
