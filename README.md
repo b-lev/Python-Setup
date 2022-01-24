@@ -58,8 +58,7 @@ Now you are ready. Do the following per project or assignment that you start.
 
 1. Open Github Desktop and select "New Repository...". You'll see this dialog.
 
-
-<center><img src="images/create.jpg?raw=true" width="50%"></center>
+<p align="center"><img src="images/create.jpg?raw=true" width="50%"></p>
 
 1. Enter the details. 
      - Any short name works. For this demonstration use "tutorial-example". 
