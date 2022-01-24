@@ -43,9 +43,9 @@ All tools are free. (And I have no relationship with the third parties who have 
 
 # Create a repository 
 
-There is no excuse for losing your files for a project or assignment. Nope, it's just not acceptable. You should never code such that your files aren't backed up elsewhere. One solution is to use tools that backup hourly or even everything you save a file; these include Apple TimeMachine, or Crashplan, Dropbox, OneDrive, Box, and more. Those solutions are useful, but they are not good enough for software engineering and completing assignments. Instead, we need to use a tool for source control. 
+There is no excuse for losing your files for a project or assignment. Nope, it's just not acceptable. You should never code such that your files aren't backed up elsewhere. One solution is to use tools that backup hourly or even every time you save a file. You could use Apple TimeMachine, or Crashplan, Dropbox, OneDrive, Box, and many more. Those solutions are useful, but they are not good enough to be used as tools for proper software engineering and completing assignments. Instead, we need to use a tool for *source control*. 
 
-Git is our software of choice for source control. Many other such tools exist. Now in reality, we aren't going to using Git only, we are going to use GitHub, which is Git and cloud backup. (It's worth noting that the Github people didn't create git, but that's a story for another day.) The nice thing about Github is that if your files are destroyed, you can retrieve them from the cloud at any time. If the Github cloud storage facility is destroyed, well then you still have them on your computer.  
+Git will be our software of choice for source control. Many tools for source control exist and git is just one of them. Now in reality, we aren't going to using git only --- we are going to use GitHub, which is Git coupled with cloud storage. (It's worth noting that the Github people didn't create git, but that's a story for another day.) The nice thing about Github is that if your home/computer/disk/files are destroyed, you can retrieve them from the cloud at any time. If the Github cloud storage facility is destroyed, well then you still have them on your computer don't you.
 
 Here the steps you should go through for at least each course you are if, if not distinctly for every assignment you complete. 
 
