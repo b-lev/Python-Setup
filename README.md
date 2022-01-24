@@ -132,8 +132,8 @@ Python ships with a large set of [standard libraries](https://docs.python.org/3.
 
 For any good third party library, there are typical two important websites: it's pypi.org page containing documentation and it's homepage. (It turns out that most of the time, the homepage for a library is typically github.) For random_words, they are:
 
-    - documentation: https://pypi.org/project/RandomWords/
-    - homepage: https://github.com/tomislater/RandomWords
+- documentation: https://pypi.org/project/RandomWords/
+- homepage: https://github.com/tomislater/RandomWords
 
 Try to run our little python program. The intent is to create a Python dictionary of randomly chosen student details. You should get an error when you run it. Open a terminal, and change to the directory containing the repository and saved intro.py file:
 
