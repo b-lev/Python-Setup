@@ -128,13 +128,6 @@ Before you get this code to run, you'll need to install the randomwords library.
 
 # Installing third-party library with pip
 
-Python ships with a large set of [standard libraries](https://docs.python.org/3.9/library/index.html). There a ton of high-quality third-party libraries available as well. (The source code for many  third party libraries is often stored  on github, it turns out.) In the code above, you can see that I've used the random_words library. 
-
-For any good third party library, there are typical two important websites: it's pypi.org page containing documentation and it's homepage. (It turns out that most of the time, the homepage for a library is typically github.) For random_words, they are:
-
-- documentation: https://pypi.org/project/RandomWords/
-- homepage: https://github.com/tomislater/RandomWords
-
 Try to run our little python program. The intent is to create a Python dictionary of randomly chosen student details. You should get an error when you run it. Open a terminal, and change to the directory containing the repository and saved intro.py file:
 
 ```
@@ -145,6 +138,14 @@ Traceback (most recent call last):
     from random_words import RandomEmails
 ModuleNotFoundError: No module named 'random_words'
 ```
+
+Python ships with a large set of [standard libraries](https://docs.python.org/3.9/library/index.html). There a ton of high-quality third-party libraries available as well. (The source code for many  third party libraries is often stored  on github, it turns out.) In the code above, you can see that I've used the random_words library. 
+
+For any good third party library, there are typical two important websites: it's pypi.org page containing documentation and it's homepage. (It turns out that most of the time, the homepage for a library is typically github.) For random_words, they are:
+
+- documentation: https://pypi.org/project/RandomWords/
+- homepage: https://github.com/tomislater/RandomWords
+
 
 I've been calling ```random_words``` a "library" and yet Python is complaining about a missing "module". What's the difference? A library is a loose term describing the project and its collection of files and such that perform some function. A module is a specific set of files that contain the code that instantiate or realize the library's goals. And so here Python is complaining that it can't find the files it needs to import ```random_words```. 
 
