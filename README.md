@@ -58,7 +58,7 @@ Now that you did it, do the following per project.
 1. Open Github Desktop and select "New Repository..."
 
 1. Enter the details. 
-     - Any short name works. Perhaps for this "tutorial-example". 
+     - Any short name works. For this demonstration use "tutorial-example". 
      - Description is not important, leave it blank or fill it out. 
      - The *local path* should be the full path to your "github" subdirectory that you created already. 
      - Click the "initialize this repository with a README" because we want one.
@@ -70,6 +70,8 @@ Now that you did it, do the following per project.
 1. Now a dialog window will show up, and you probably don't need to adjust anything. *Important* Make sure the box for "Keep this code private" is checked. If you are creating a repository for a course assignment, you would be violated academic honesty policies by making your code public.
 
 Success! You should be to see your new repository on Github. 
+
+![Image](images/add-intro-py-2.jpg?raw=true)
 
 # Starting the editor
 
