@@ -9,7 +9,7 @@
 - [Using isort to sort your imports](#Using-isort-to-sort-your-imports)
 - [Using flake8 to lint your code](#Using-flake8-to-lint-your-code)
 - [Running black, flake8, and isort in VSCode](#running-black-flake8-and-isort-in-vscode)
-- [Other Topics](#Other-Topics)
+- [Other topics you should look into](#Other-topics-you-should-look-into)
 
 
 # Introduction
@@ -431,14 +431,14 @@ VSCode keeps its settings in a file called "settings.json". JSON is a human-read
 First, you need to open up the command pallette. Go again to the bottom left and click on the  gear icon. From there, select "Command Palette". You should see something like this. Select "Preferences: Open Settings (JSON)", and if you don't see that listed, start typing those words until you do.
 <p align="center"><img src="images/command-pal.jpg?raw=true" width="75%"></p>
 
-This is going to open a file that is probably not empty. You'll notice words and settings that are related to what we see above. 
+This is going to open a file that is probably not empty. You'll notice words and settings that are related to what we did above setting up black and flake8. 
 
 Here's the hard part. You need to adjust this file but not violate the JSON rules. In essence, keep commas between items and all brackets need to closed eventually.  Here the steps you need to take.
 
-1. Figure out the *full path* to the isort executable on your computer. (It's called isort.exe on windows.) You can use a file search command to do that. If you are on MacOs or Linux and you've installed isort, you might get away with ```which isort```. To confirm you have the right path, enter it in full on the command line, and it should work. 
+1. Figure out the *full path* to the isort executable on your computer. (It's called isort.exe on windows.) You can use a file search command to do that. If you are on MacOS or Linux and you've installed isort, you might get away with ```which isort```. To confirm you have the right path, enter it in full on the command line, and it should work. 
 
-2. Make a copy of what is now in your settings.json file. Put the copy in  notepad or in file on your desktop or something. 
-3. Add these lines into the middle of your settings.json file. Please take notice of the double backslashes that are required for windows paths! For linux or macos, no need for double forward slashes: "/usr/bin/isort" or whatever is good.
+2. Make a copy of the existing settings.json file before you modify it! Put the copy in  notepad or in file on your desktop or something. 
+3. Add these lines into the middle of your settings.json file. Please take notice of the double backslashes that are required for windows paths! For linux or macos, no need for double forward slashes: "/usr/local/bin/isort" or whatever you found is perfect.
 ```
     "python.sortImports.path": "c:\\Users\\brian\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\isort.exe",
     "[python]": {
@@ -449,7 +449,7 @@ Here's the hard part. You need to adjust this file but not violate the JSON rule
 
 ```
 
-For example, here's how they look merged for me. Note that here my python executable is just "py". Yours may be different. And my copy of isort.exe is in a really deep path. Not unexpected, but deep.
+Here's how the new lines look for me when  merged. Note that here my python executable is just "py". Yours may be different. And my copy of isort.exe is in a really deep path. Not unexpected, but deep.
 ```
 {
     "python.formatting.provider": "black",
@@ -463,11 +463,11 @@ For example, here's how they look merged for me. Note that here my python execut
     },    
 }
 ```
-4. Test that it works by messing up your import order, and then save the file. 
-5. If you can't get it to work, then copy back the original settings. 
+4. Test that it works by messing up your ```import``` order in intro.py, and then save the file. The imports should be alphabetized and so on after saving.
+5. If you can't get it to work, then copy back the original settings. Try again another day, or maybe find a friend to help out.
 
 
-# Other Topics you should look into 
+# Other topics you should look into 
 
 There are many other topics and tools that you should start looking into to improve your ability to code. Future versions of this site will expand on some of them. 
 
