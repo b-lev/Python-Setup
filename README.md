@@ -1,10 +1,24 @@
+
+- [Introduction](#Introduction)
+- [Getting all the tools installed](#Getting-all-the-tools-installed)
+- [Create a repository](Create-a-repository)
+- [Starting the editor](#Starting-the-editor)
+--[Installing third-party library with pip](#Installing-third-party-library-with-pip)
+- [Add your code to git and pushing it to the cloud](#Add-your-code-to-git-and-pushing-it-to-the-cloud)
+- [Standardizing your source code](#Standardizing-your-source-code)
+- [Using isort to sort your imports](#Using-isort-to-sort-your-imports)
+- [Using flake8 to lint your code](#Using-flake8-to-lint-your-code)
+- [Running black, isort, and flake8 in VSCode](#Running-black,-isort,-and-flake8-in-VSCode)
+- [Other Topics](#Other-Topics)
+
+
 # Introduction
-This page provides some general advice on how to set up your local environment to code with Python.
+This page provides some general advice on how to set up your local environment to code proficiently with Python. These instructions are not the simplest way to set up your environment. These instructions are step toward how a professional might set up their environment. It's a foundation: from here you can keep adding new tools as you gain experience. 
 
-In the examples below, we are going to focus on Python 3.9, and we'll give version numbers for all other tools so that
-you can avoid unexpected errors. 
+In the examples below, we are going to focus on Python 3.9, and we'll give version numbers for all other tools so that you can avoid unexpected errors. 
 
-All tools are free. (And I have no relationship with any of the third parties who have made the tools we'll be using.)
+All tools are free. (And I have no relationship with the third parties who have made the tools.)
+
 
 # Getting all the tools installed
 
