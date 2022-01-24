@@ -438,7 +438,7 @@ Here's the hard part. You need to adjust this file but not violate the JSON rule
 1. Figure out the *full path* to the isort executable on your computer. (It's called isort.exe on windows.) You can use a file search command to do that. If you are on MacOs or Linux and you've installed isort, you might get away with ```which isort```. To confirm you have the right path, enter it in full on the command line, and it should work. 
 
 2. Make a copy of what is now in your settings.json file. Put the copy in  notepad or in file on your desktop or something. 
-3. Add these lines into the middle of your settings.json file. 
+3. Add these lines into the middle of your settings.json file. Please take notice of the double backslashes that are required for windows paths! For linux or macos, no need for double forward slashes: "/usr/bin/isort" or whatever is good.
 ```
     "python.sortImports.path": "c:\\Users\\brian\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\isort.exe",
     "[python]": {
