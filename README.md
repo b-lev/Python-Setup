@@ -54,12 +54,12 @@ Before you get started, make sure you do the following steps, each once ever:
 - Create a subdirectory for using git from home directory, or your documents directory, or something similar. Call it "github". You need only do this once ever. 
 - Link Github Desktop to your GitHub account. To do that, go to "Preferences" and then select "Accounts" and then sign in your Github account. 
 
-Now that you did it, do the following per project.
+Now you are ready. Do the following per project or assignment that you start.
 
-1. Open Github Desktop and select "New Repository..."
+1. Open Github Desktop and select "New Repository...". You'll see this dialog.
 
 
-<img src="images/create.jpg?raw=true" width="50%">
+<center><img src="images/create.jpg?raw=true" width="50%"></center>
 
 1. Enter the details. 
      - Any short name works. For this demonstration use "tutorial-example". 
