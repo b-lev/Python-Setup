@@ -285,9 +285,9 @@ if __name__ == "__main__":
     main()
 ```
 
-That's much nicer! The lines are not too wide. There is some standard spacing between the imports, functions, and the ```if __name__``` clause at the end. It changed the single quotes around exam_score to use double quotes so that it's consistent with the other lines. It even put a space between ```#``` and the comment. Again, before we had a legit Python program that ran correctly. But now we have source that is equivalent and easier to read.
+That's much nicer! The lines are not too wide. There is some standard spacing between the imports, functions, and the ```if __name__``` clause at the end. It changed the single quotes around ```exam_score``` to use double quotes so that it's consistent with the other lines. It even put a space between ```#``` and the comment. Again, before we had a legit Python program that ran correctly. But now we have source that is equivalent and easier to read.
 
-Black is so useful that I promise you that once you start using it consistently, you'll realize how crazy life was before. You will get annoyed at code that hasn't been sent through Black.
+Black is so useful that I promise you that once you start using it consistently, you'll realize how crazy your life was before. You will get annoyed at code that hasn't been sent through Black, because it's so much more readable after it has been sent through Black. 
 
 There is more we can do to clean up our code, but let's pause for a minute and talk about git/github again. 
 
