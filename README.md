@@ -344,10 +344,10 @@ Just like black, isort changes the source code only if there isn't a syntax erro
     if __name__ == "__main__":
         main()
 ```
-You'll notice that isort also separated each import into its own line (before random and sys) were together. And it combined all the imports from random_words into one statement. That's clearer.
+You'll notice that isort also separated each import into its own line (before random and sys) were together. And it combined all the imports from random_words into one statement. That's clearer formatting for the reader.
 
 
-<p align="center"><img src="images/after-isort.jpg?raw=true" width="50%"></p>
+<p align="center"><img src="images/after-isort.jpg?raw=true" width="100%"></p>
 
 ## Using flake8 to lint your code
 
