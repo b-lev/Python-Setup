@@ -28,7 +28,7 @@ There are many resources for learning python for the first time or for sharpenin
 
 # Getting all the tools installed
 
-1. To get started with this tutorial, first make sure you have [Python installed](https://www.python.org/downloads/) and that you can access it from a command line. On windows I suggest you use a PowerShell window. On MacOS and Unix it's best to use a Terminal window. Once you have started the command line, type ```python``` at the prompt. You should see something like this:
+1. To get started with this tutorial, first make sure you have [Python installed](https://www.python.org/downloads/). Again, here I'm using Python version 3.9. Make sure you can access it from a command line. On windows I suggest you use a PowerShell window. On MacOS and Unix it's best to use a Terminal window. Once you have started the command line, type ```python``` at the prompt. You should see something like this:
 
     ```
     PS C:\Users\brian> python
@@ -36,9 +36,10 @@ There are many resources for learning python for the first time or for sharpenin
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
     ```
-    To quit you can type ```exit()``` and hit return. 
+    
+    Once you get a python prompt of ```>>>```, you are good. To quit you can type ```exit()``` and hit return. 
 
-    Note that it says "3.9.5". The "3.9" is the important part. If you see anything else, you can try to start python with ```python3.9" instead.
+    The command to run it much be slightly different depending on how you installed it and what OS you are running. For example, on windows I've seen it installed as ```py.exe```. It's important that it says "3.9.5" or something close to that (like 3.9.9). The "3.9" is the important part. If you see anything else (like 2.7 or 3.10), you can try to start python with ```python3.9" instead for example. 
 
 1. Create an account on [github](https://github.com/join). There is no need to sign up for a paid plan. 
 
@@ -162,7 +163,7 @@ Installation is easy. For all libraries on pypi.org, there is a install command 
 
  <p align="center"><img src="images/rw.jpg?raw=true" width="50%"></p>
 
-Paste or type the following into your terminal. ```pip``` is a command that is installed with python. On some computers, you might have many versions of python installed. Just calling pip might install a library for a version of python that you aren't using. So to be safe, you can try using ```pip3.9 install ...```. If that's not installed (often the case on windows) then go ahead and use ```pip install ...```  
+Paste or type the following into your terminal. ```pip``` is a command that is installed with python. On some computers, you might have many versions of python installed. Just calling pip might install a library for a version of python that you aren't using. So to be safe, you can try using ```pip3.9 install ...```. If that's not installed (often the case on windows) then go ahead and use ```pip install ...```. You can also try ```py -m pip install...``` or ```python3.9 -m pip install...```
 
 ```
 % pip3.9 install RandomWords
@@ -394,17 +395,12 @@ Let's instead of configure vscode to run the three tools each time we save our s
 
 First, if you haven't already, install the "python extension". One way to do that is to visit [this page](https://marketplace.visualstudio.com/items?itemName=ms-python.python) and click the green install button.
 
-First we want to open the "Command Pallette". You can do that from the "View" menu. On a mac you can hold down "command" and "shift" and then "P". On windows its "ctrl" and "shift" and then "P". Linux is something similar. You should see something like this:
-
-<p align="center"><img src="images/command-pal.jpg?raw=true" width="50%"></p>
-
-Select "Preferences: Open Settings (JSON)". If you don't see that listed, start typing it out until you do. Be sure you have ">" at the beginning of the entry box you are typing into. If you haven't seen it before, JSON is a human-readable way that computers can store data in structured dictionaries and lists and such. (Or you can think of it as a computer-readable way that humans can store data in structured dictionaries and lists and such.)
-
-vscode should open up a new tab, and if you really have fresh install of vscode, then you probably just see two lines like so:
-
-<p align="center"><img src="images/blank-json.jpg?raw=true" width="50%"></p>
+There are a few tutorials for doing this online, but I don't know that they are helpful for beginners. If you know what you are doing already, and you are comfortable messing around with JSON, then probably you are experienced enough to find these tutorials. (Just search for "isort black vscode"). Let's get this working without the chance of breaking your installation of vscode. 
 
 
+
+
+```
 
 # Other Topics
 
@@ -424,7 +420,6 @@ To be written.
 
 - [doctest](https://docs.python.org/3/library/doctest.html) The doctest module searches for pieces of text that look like interactive Python sessions, and then executes those sessions to verify that they work exactly as shown.
 - [pylint](https://pylint.org) Pylint is a Python static code analysis tool which looks for programming errors, helps enforcing a coding standard, sniffs for code smells and offers simple refactoring suggestions.
-
 - [pydocstyle](https://pypi.org/project/pydocstyle/). pydocstyle is a static analysis tool for checking compliance with Python docstring conventions.
 - [pyright](https://github.com/Microsoft/pyright). Pyright is a fast type checker meant for large Python source bases. It can run in a “watch” mode and performs fast incremental updates when files are modified.
 - [hypothesis](https://hypothesis.readthedocs.io/en/latest/). A Python library for creating unit tests which are simpler to write and more powerful when run, finding edge cases in your code you wouldn’t have thought to look for.
