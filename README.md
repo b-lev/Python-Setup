@@ -3,7 +3,7 @@
 - [Getting all the tools installed](#Getting-all-the-tools-installed)
 - [Create a repository](Create-a-repository)
 - [Starting the editor](#Starting-the-editor)
---[Installing third-party library with pip](#Installing-third-party-library-with-pip)
+--[Installing a third-party library with pip](#Installing-a-third-party-library-with-pip)
 - [Add your code to git and pushing it to the cloud](#Add-your-code-to-git-and-pushing-it-to-the-cloud)
 - [Standardizing your source code](#Standardizing-your-source-code)
 - [Using isort to sort your imports](#Using-isort-to-sort-your-imports)
@@ -21,7 +21,12 @@ All tools are free. (And I have no relationship with the third parties who have 
 
 ## Learning python
 
-There are many resources for learning python for the first time or for sharpening your skills.
+You can be a Python beginner and make it through this tutorial. We aren't going to
+code, but the Python syntax should look readable to you. 
+
+There are many resources for learning python for the first time or for sharpening your skills. Here are
+some helpful links. 
+
 - https://docs.python.org/3.9/tutorial/index.html
 - https://diveintopython3.net/index.html
 - https://learnxinyminutes.com/docs/python/
@@ -41,22 +46,23 @@ There are many resources for learning python for the first time or for sharpenin
     
     Once you get a python prompt of ```>>>```, you are good. To quit you can type ```exit()``` and hit return. 
 
-    The command to run it much be slightly different depending on how you installed it and what OS you are running. For example, on windows I've seen it installed as ```py.exe```. It's important that it says "3.9.5" or something close to that (like 3.9.9). The "3.9" is the important part. If you see anything else (like 2.7 or 3.10), you can try to start python with ```python3.9``` instead for example. 
+    The command to run it much be slightly different depending on how you installed it and what OS you are running. For example, on windows I've seen it installed as ```py.exe```. 
+
+    It's important that it says "3.9.5" or something close to that (like 3.9.9) once you've got it running. The "3.9" is the important part. If you see anything else (like 2.7 or 3.10), you can try to start python with ```python3.9``` instead for example. 
 
 1. Create an account on [github](https://github.com/join). There is no need to sign up for a paid plan. 
 
+2. Download and install [github desktop](https://desktop.github.com). You can use git from a terminal, but this app is way easier.
 
-1. Download and install [github desktop](https://desktop.github.com). You can use git from a terminal, but this app is way easier.
-
-1. Download and install [Visual Studio Code](https://code.visualstudio.com/Download). 
+3. Download and install [Visual Studio Code](https://code.visualstudio.com/Download). 
 
 # Create a repository 
 
 There is no excuse for losing your files for a project or assignment. Nope, it's just not acceptable. You should never code such that your files aren't backed up elsewhere. One solution is to use tools that backup hourly or even every time you save a file. You could use Apple TimeMachine, or Crashplan, Dropbox, OneDrive, Box, and many more. Those solutions are useful, but they are not good enough to be used as tools for proper software engineering and completing assignments. Instead, we need to use a tool for *source control*. 
 
-Git will be our software of choice for source control. Many tools for source control exist and git is just one of them. Now in reality, we aren't going to using git only --- we are going to use GitHub, which is Git coupled with cloud storage. (It's worth noting that the Github people didn't create git, but that's a story for another day.) The nice thing about Github is that if your home/computer/disk/files are destroyed, you can retrieve them from the cloud at any time. If the Github cloud storage facility is destroyed, well then you still have them on your computer don't you.
+Git will be our software of choice for source control. Many tools for source control exist and git is just one of them. Now in reality, we aren't going to using git only --- we are going to use GitHub, which is Git coupled with cloud storage. (It's worth noting that the Github people didn't create git, but that's a story for another day.) The nice thing about Github is that if your home/computer/disk/files are destroyed, you can retrieve them from the cloud at any time. If the Github cloud storage facility is destroyed, well then you still have them on your computer, don't you.
 
-Here the steps you should go through for at least each course you are in, if not separately for every assignment you start. 
+Here are the steps you should go through for at least each course you are in, if not separately for every assignment you start. 
 
 Before you get started, make sure you do the following steps, each once ever:
 
@@ -69,7 +75,7 @@ Now you are ready. Do the following per project or assignment that you start.
 
 <p align="center"><img src="images/create.jpg?raw=true" width="50%"></p>
 
-1. Enter the details. 
+2. Enter the details. 
      - Any short name works. For this demonstration use "tutorial-example". 
      - Description is not important, leave it blank or fill it out. 
      - The *local path* should be the full path to your "github" subdirectory that you created already. 
@@ -77,14 +83,11 @@ Now you are ready. Do the following per project or assignment that you start.
      - From the "Git Ignore" dropdown menu, select "Python".
      - Leave the  "License" dropdown menu selection as "None". We are going to create a private repository (i.e., one that the world can't access).
 
-1. Publish your repository on github by clicking the "publish repository" button. (If you haven't linked your Github Desktop to your Github account using the preferences->accounts dialog, as I discussed above, this step won't work.)
-
+3. Publish your repository on github by clicking the "publish repository" button. (If you haven't linked your Github Desktop to your Github account using the preferences->accounts dialog, as I discussed above, this step won't work.)
 
 <p align="center"><img src="images/publish.jpg?raw=true" width="50%"></p>
 
-
-
-1. Now a dialog window will show up, and you probably don't need to adjust anything. *Important* Make sure the box for "Keep this code private" is checked. If you are creating a repository for a course assignment, **you would be violating academic honesty policies by making your code public**.
+4. Now a dialog window will show up, and you probably don't need to adjust anything. *Important* Make sure the box for "Keep this code private" is checked. If you are creating a repository for a course assignment, **you would be violating academic honesty policies by making your code public**.
 
 <p align="center"><img src="images/publish-dialog.jpg?raw=true" width="50%"></p>
 
@@ -138,7 +141,7 @@ At this point, if vscode asks if you want to install the "python extension", the
 
 Before you get this code to run, you'll need to install the randomwords library. It doesn't come with python. 
 
-# Installing third-party library with pip
+# Installing a third-party library with pip
 
 Try to run our little python program. The intent is to create a Python dictionary of randomly chosen student details.  Open a terminal, and change to the directory containing the repository and saved intro.py file. Then call python on the file. You should get an error when you run it.
 
@@ -151,9 +154,9 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'random_words'
 ```
 
-Python ships with a large set of [standard libraries](https://docs.python.org/3.9/library/index.html). There a ton of high-quality third-party libraries available as well. (The source code for many  third party libraries is often stored  on github, it turns out.) In the code above, you can see that I've used the random_words library, but it's not installed on your computer yet. 
+Python ships with a large set of [standard libraries](https://docs.python.org/3.9/library/index.html). There a ton of high-quality third-party libraries available as well. (The source code for many  third party libraries is often stored  on github, it turns out.) In the code above, you can see that I've imported the random_words library, but it's not installed on your computer yet. 
 
-For any good third party library, there are typical two important websites: its pypi.org page containing documentation and its homepage. (It turns out that most of the time, the homepage for a library is typically github.) For random_words, they are:
+For any good third-party library, there are typical two important websites: its pypi.org page containing documentation and its homepage. (It turns out that most of the time, the homepage for a library is typically github.) For random_words, they are:
 
 - documentation: https://pypi.org/project/RandomWords/
 - homepage: https://github.com/tomislater/RandomWords
@@ -162,6 +165,7 @@ For any good third party library, there are typical two important websites: its 
 I've been calling ```random_words``` a "library" and yet Python is complaining about a missing "module". What's the difference? A library is a loose term describing the project and its collection of files and such that perform some function. A module is a specific set of files that contain the code that instantiate or realize the library's goals. And so here Python is complaining that it can't find the files it needs to import ```random_words```. 
 
 Installation is easy. For all libraries on pypi.org, there is a install command you can copy by clicking the little copy icon. 
+
 
  <p align="center"><img src="images/rw.jpg?raw=true" width="50%"></p>
 
@@ -210,13 +214,13 @@ Now try to run the code. You should get something like this. Each time you run i
 ```
 
 # Add your code to git and pushing it to the cloud
-Git is great because it will help you keep track of revisions to your code. Tracking sequence of revisions is pretty vital when you are coding with even one other person. It's also important when you are coding alone!
+Git is great because it will help you keep track of revisions to your code. Tracking a sequence of revisions is pretty vital when you are coding with even one other person. It's also important when you are coding alone!
 
 One of the most false or synthetic or non-representative parts of learning to code in any course is the typical process for completing an assignment. The instructor hands out an assignment; you spend a relatively short time doing it alone (really just a week or two); you get it to run correctly once; you submit; you never run the code again and you never use the code again.
 
 In real life, projects last months or years. The goals of the project changes over time. The people involved change. You run it again and again and again. And you try to reuse the code in other projects. And there is old joke that for any real project there are always at least two people: yourself, and yourself three months from now. You have to learn to write and structure your code so that you can put it down and make sense of it three months later, as if you are a totally different person. 
 
-Git and tools like it help you in that goal. If the above story isn't convincing, then in the very least, they are a solution to a problem that often comes up for new programmers: "This code worked a few minutes but I made some change, and I don't know what ... those changes broke it... I'm totally lost and I don't know how to get back to the working version."
+Git and tools like it help you in that goal. If the above reasoning isn't convincing, then in the very least, they are a solution to a problem that often comes up for new programmers: "This code worked a few minutes but I made some change, and I don't know what ... those changes broke it... I'm totally lost and I don't know how to get back to the working version."
 
 Lastly, git will help you break your coding up into management micro-goals. When you code, consider the micro-goal you want to achieve. Maybe your goal is to write a method that saves some data to a file. Once the function seems to be working correctly, then tell git about your progress as a *commit* to the repository. To be clear, commit the source code is very different than saving it to your local file system.
 
@@ -241,7 +245,7 @@ That's it! You pushed your first commit!
 
 It's hard to sight read code. That is, it's hard to just look at code and read it as easily as you might read a book. It takes experience and talent. But even for reading prose books, for which we are all experts by now, we expect the presentation to follow certain conventions: reasonably wide margins, chapters numbered with titles and larger fonts, the use of bold and italics for emphasis, and the [separation of paragraphs](images/ducks.jpg?raw=true) with vertical space or indentations are all helpful for comprehension, even if they aren't strictly part of english grammar. 
 
-The same is true for code. When we see code formatted in an expected fashion, it improves comprehension for us as the reader. And comprehension is really important for yourself (so that you don't miss bugs), for your TA (so that they can help you squash a bug), and for your professional colleagues (so that they build on your code and help you squash bugs).
+The same is true for code. When we see code formatted in an expected fashion, it improves comprehension for us as the reader. And comprehension is really important for yourself (so that you don't miss bugs), for your instructor and TAs (so that they can help you squash a bug), and for your professional colleagues (so that they build on your code and help you squash bugs).
 
 
 ## Using Black to format your code
@@ -260,12 +264,14 @@ All done! ✨ 🍰 ✨
 
 ```
 
-Or you can do it to every file in a directory. (Can you figure out how to hit all files in subdirectories?)
+Or you can do it to every file in a directory.
 
 ```
 % black *.py
 ```
 
+(Can you figure out how to hit all files in subdirectories?)
+ 
 It's important to note that Black will not reformat your python file if it contains a syntax error. 
 
 Now intro.py should look like this:
@@ -327,7 +333,7 @@ Fixing /Users/brian/github/tutorial-example/intro.py
 ```
 (Notice that I included an argument for ```-profile black``` so that isort is compatible with black.)
 
-Just like black, isort changes the source code only if there isn't a syntax error and it makes changes only if it doesn't change the how the program runs. All isort does is sort and group together imports: imports from Python's standard library are first, then a new line, and then a group of libraries that have been installed with pip (or were locally created). Now our source code looks like so:
+Just like black, isort changes the source code only if there isn't a syntax error and it makes changes only if it doesn't change how the program runs. All isort does is sort and group together imports: imports from Python's standard library are first, then a new line, and then a group of libraries that have been installed with pip (or were locally created). Now our source code looks like so:
 
 ```
     import random
@@ -356,7 +362,7 @@ Just like black, isort changes the source code only if there isn't a syntax erro
     if __name__ == "__main__":
         main()
 ```
-You'll notice that isort also separated each import into its own line (before random and sys) were together. And it combined all the imports from random_words into one statement. That's clearer formatting for the reader.
+You'll notice that isort also separated each import into its own line (before random and sys were together). And it combined all the imports from random_words into one statement. That's clearer formatting for the reader.
 
 Here's the diff of what isort did. Over time, you'll get pretty good at reading diffs. 
 
@@ -370,11 +376,13 @@ A *linter* is a program that examines your source code for bad style or errors, 
 
 I've installed version 4.0.1. Recall that you can install a specific version like so:
 
-```% pip install flake8==4.0.1
+```
+% pip install flake8==4.0.1
 ```
 After you pip install it, run it with these arguments to show only the errors:
 
-```% flake8 --select=F intro.py
+```
+% flake8 --select=F intro.py
 intro.py:2:1: F401 'sys' imported but unused
 ```
 
@@ -385,7 +393,7 @@ Here's the diff from making this change.
 
 ## Looking back and old commits
 
-Did you try switching on the history tab? You should be able to see each commit you've made during the tutorial. For each commit, you can see diff against the previous commit. Notice in this screen grab, my most recent commit has an up arrow --- that means I haven't push to the cloud yet. 
+Did you try switching on the history tab? You should be able to see each commit you've made during the tutorial. For each commit, you can see diff against the previous commit. Notice in this screen grab, my most recent commit has an up arrow --- that means I haven't push to the cloud yet. If you haven't pushed, it's not backed up. 
 
 <p align="center"><img src="images/commit.jpg?raw=true" width="50%"></p>
 
@@ -393,15 +401,15 @@ Did you try switching on the history tab? You should be able to see each commit 
 
 This is a great set of tools. And you have the option of running them when you are done with a project, intermittently while you code, or as much as possible. It turns out that the best option is to run them as much as possible. But no one wants to save a file and then switch to the terminal, run the three commands, and then switch back to the editor. That's terribly inefficient. 
 
-Let's instead of configure vscode to run black and flake8 tools each time we save our source code. Below we'll configure vscode to run isort, it's a little more challenging. 
+Let's instead configure vscode to run black and flake8 tools each time we save our source code. Below we'll configure vscode to run isort, it's a little more challenging. 
 
 ## Black and flake8
 First, if you haven't already, install the "python extension". One way to do that is to visit [this page](https://marketplace.visualstudio.com/items?itemName=ms-python.python) and click the green install button.
 
 
-One thing you should do to get started is to check that vscode can run python for you. From the "Terminal" menu at the top, select "New Terminal". You should end up with a prompt: a powershell prompt if you are windows, and a terminal prompt if you are on windows or linux. From the prompt, run python just as you did outside of vscode. It should work just the same. (If not, something is wrong. For example, if you opened this terminal and then installed python, perhaps close the vscode terminal and try again.)
+One thing you should do to get started is to check that vscode can run python for you. From the "Terminal" menu at the top, select "New Terminal". You should end up with a prompt: a powershell prompt if you are windows, and a terminal prompt if you are on mac or linux. From the prompt, run python just as you did outside of vscode. It should work just the same. (If not, something is wrong. For example, if you opened this terminal and then installed python, perhaps close the vscode terminal and try again.)
 
-Make sure intro.py is open and switch to that tab. Look in the bottom left corner. Do you see Python 3.9 listed? Click whatever text is there. (It may ask you to end the path for python. Enter exactly what you entered to run python in the vscode terminal. and then look again.) If it gives you some specific versions of python to chose from --- that's great --- pick version 3.9 something. Here I've got 3.9.10 selected. 
+Make sure intro.py is open and switch to that tab. Look in the bottom left corner. Do you see Python 3.9 listed? Click whatever text is there. (It may ask you to enter the path for python. Enter exactly what you entered to run python in the vscode terminal. and then look again.) If it gives you some specific versions of python to chose from --- that's great --- pick version 3.9 something. Here I've got 3.9.10 selected. 
 
 <p align="center"><img src="images/corner.jpg?raw=true" width="50%"></p>
 
@@ -423,7 +431,7 @@ Scroll down more until you see the configuration for linting and select these op
 <p align="center"><img src="images/vsc-flake8.jpg?raw=true" width="75%"></p>
 <p align="center"><img src="images/vsc-lint-on-save.jpg?raw=true" width="75%"></p>
 
-Now go back to your python file and adjust the formatting. You should see it change back upon saving the file. With flake8, you will see squiggly colored underlines where there are problems, much like a spell checker in a word document. If you hover over problems, you'll get a tooltip-style hint as to what's run. You can also pull up a list of problems from the status bar at the very bottom (left side) of the vscode window.
+Now go back to your python file and adjust the formatting. You should see it change back upon saving the file. With flake8, you will see squiggly colored underlines where there are problems, much like a spell checker in a word document. If you hover over problems, you'll get a tooltip-style hint as to what's wrong. You can also pull up a list of problems from the status bar at the very bottom (left side) of the vscode window.
 
 ## Adding isort to vscode 
 There are a few tutorials for doing this online, but I don't know that they are helpful for beginners. I'm not sure the following is easy. Proceed at your own risk. 
